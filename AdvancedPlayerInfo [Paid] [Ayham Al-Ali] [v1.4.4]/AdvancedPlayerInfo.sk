@@ -1,0 +1,2862 @@
+#--░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ 
+#--▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ 
+#--░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ 
+#--
+#--▒█▀▀▀█ ▒█▀▀█ ▒█▀▀█ ▀█▀ ▒█▀▀█ ▀▀█▀▀ 　 ▒█▀▄▀█ ░█▀▀█ ▒█▀▀▄ ▒█▀▀▀ 　 ▒█▀▀█ ▒█░░▒█ 
+#--░▀▀▀▄▄ ▒█░░░ ▒█▄▄▀ ▒█░ ▒█▄▄█ ░▒█░░ 　 ▒█▒█▒█ ▒█▄▄█ ▒█░▒█ ▒█▀▀▀ 　 ▒█▀▀▄ ▒█▄▄▄█ 
+#--▒█▄▄▄█ ▒█▄▄█ ▒█░▒█ ▄█▄ ▒█░░░ ░▒█░░ 　 ▒█░░▒█ ▒█░▒█ ▒█▄▄▀ ▒█▄▄▄ 　 ▒█▄▄█ ░░▒█░░ 
+#--
+#--░█▀▀█ ▒█░░▒█ ▒█░▒█ ░█▀▀█ ▒█▀▄▀█ 　 ░█▀▀█ ▒█░░░ ░█▀▀█ ▒█░░░ ▀█▀ 
+#--▒█▄▄█ ▒█▄▄▄█ ▒█▀▀█ ▒█▄▄█ ▒█▒█▒█ 　 ▒█▄▄█ ▒█░░░ ▒█▄▄█ ▒█░░░ ▒█░ 
+#--▒█░▒█ ░░▒█░░ ▒█░▒█ ▒█░▒█ ▒█░░▒█ 　 ▒█░▒█ ▒█▄▄█ ▒█░▒█ ▒█▄▄█ ▄█▄ 
+#--
+#--░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ 
+#--▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ 
+#--░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ 
+#
+#--▒█▀▄▀█ ░█▀▀█ ▒█▀▀▄ ▒█▀▀▀ 　 ▒█▀▀▀ ▒█▀▀▀█ ▒█▀▀█ 
+#--▒█▒█▒█ ▒█▄▄█ ▒█░▒█ ▒█▀▀▀ 　 ▒█▀▀▀ ▒█░░▒█ ▒█▄▄▀ 
+#--▒█░░▒█ ▒█░▒█ ▒█▄▄▀ ▒█▄▄▄ 　 ▒█░░░ ▒█▄▄▄█ ▒█░▒█ 
+#--
+#--▒█▀▀▀█ ▒█▀▀█ ▒█▀▀█ ░█▀█░ ▒█▀▄▀█ ▒█▀▀▀ ▒█▀▀█ ▒█▀▀▀█ 
+#--▒█░░▒█ ▒█▄▄█ ▒█░▄▄ █▄▄█▄ ▒█▒█▒█ ▒█▀▀▀ ▒█▄▄▀ ░▀▀▀▄▄ 
+#--▒█▄▄▄█ ▒█░░░ ▒█▄▄█ ░░░█░ ▒█░░▒█ ▒█▄▄▄ ▒█░▒█ ▒█▄▄▄█ 
+#--
+#--▒█▀▀▀█ ▒█▀▀▀ ▒█▀▀█ ▒█░░▒█ ▒█▀▀▀ ▒█▀▀█ 
+#--░▀▀▀▄▄ ▒█▀▀▀ ▒█▄▄▀ ░▒█▒█░ ▒█▀▀▀ ▒█▄▄▀ 
+#--▒█▄▄▄█ ▒█▄▄▄ ▒█░▒█ ░░▀▄▀░ ▒█▄▄▄ ▒█░▒█ 
+#--
+#--░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ 
+#--▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ ▀▀ 
+#--░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ ░░ 
+
+# Skript made by Ayham Alali [iTzAyhamHD] YT: ayham5131
+# Made for OPG4MERS server by the OWNER Ayham Alali ^_^
+# It can be used for other servers as well :)
+# please support me if you can by donating: PAYPAL.ME/AYHAMALALI
+# Thank you for Downloading/Using my Skripts ❤
+# Advanced Player Info [Custom] :)
+
+# <«»> ----- <«»>
+# 
+# «AdvancedPlayerInfo plugin»
+# Author» Ayham Al-Ali
+# 
+# <«»> ----- <«»>
+
+# <❤>------- VERY IMPORTANT -------<❤>
+# 
+# This is my first Paid skript and it's open source for buyers but i hope buyers don't share it with others
+# I know it's just a script that what some people says but i took long time to complete it to upload it for you guys
+# Becuase Deobfuscating scripts is very easy i didn't obfuscate my skript. Obfuscating is useless!
+# I hope all buyers have fun with my plugin, And please do not change anything in the code you might break the code
+# Please leave a good review if you liked my work, and report any bug you find, i will fix it quickly
+# Leakers live in peace and don't leak my plugin, support me and buy it to let me make more amazing plugins
+# Also check my other plugins at https://www.spigotmc.org/resources/authors/ayhamalali.101712/
+# If you want to support me more you can Donate here ❤ paypal.me/ayhamalali
+# More Features will come soon
+# Feel free to contact me of you want anything, i'm very active on Spigot.org (My Profile» )
+# I'm also active on my Discord server (https://discord.gg/uHTVQPD), maybe more active on SpigotMC :)
+# More information about AdvancedPlayerInfo plugin is foundable in the Plugin page (use command "/playerinfo help" to get the plugin page link)
+# 
+# <❤>------- VERY IMPORTANT -------<❤>
+
+
+
+# Stuff (old):
+#  - name √
+#  - loc √
+#  - xp √
+#  - armor √
+#  - inv √
+#  - hotbar √
+#  - health √
+#  - food √
+#  - current item √
+#  - world √
+#  - ping √
+#  - last command (with date) √
+#  - last chat (with date) √
+#  - last kill (with date) √
+#  - last death by (with date) √
+#  - last block (placed) √
+#  - last block (broke) √
+#  - UUID √
+#  - Close inv √
+#  - Edit inv √
+#  - Gamemode √
+#  - Flying √
+#  - Enchanted TF √
+#  - YAML √
+#  - Block Inv click when gui is opened √
+#  - Fix Killer is not kill command √
+#  * Random color variable √ REMOVED in 1.2.1 (Because WildSkript has been removed in 1.2.1)
+#  - Sounds √
+#  - UpdateChecker √
+#  - Exempt perm √
+#  - config.yml √
+#  - Support all variables everywhere √
+
+# ChangeLog:
+#  • v1.2
+#   - Support all variables everywhere √ ADDED
+#   + Add more variables:
+#    - IP √ ADDED
+#    - Online since √ ADDED
+#    - First join √ ADDED
+#    - Display name √ ADDED
+#    - Op √ ADDED
+#    - Potions | √ ADDED
+#    - Skull √ ADDED
+#    - Join count √ ADDED
+#    - Quit count √ ADDED
+#    - Chat count √ ADDED
+#    - Cmd count √ ADDED
+#    - Jump count √ ADDED
+#    - Items crafted count √ ADDED
+#    - Items dropped count √ ADDED
+#    - Mined blocks count √ ADDED
+#    - Placed blocks count √ ADDED
+#    - Mob kills count √ ADDED
+#    - Sneak count √ ADDED
+#    - Sprint count √ ADDED
+#    - Pcikedup items count √ ADDED
+#    - Open player's enderchest √ ADDED
+#   - Check on jump (add 5 per 1) √ FIXED (Dev stuff ^_^)
+#  • v1.2.1:
+#    - Replace WildSkript with skUtilities
+#    - Random color variable REMOVED
+#    - Jump variable REMOVED
+#    - Fixed armor variables
+#    - Now if player's armor is not set it will be replaced with Barrier (soon will be customizable)
+#  • v1.2.2:
+#    - Fixed Some messages. √
+#    - minor bugs fixed √
+#    - if you have any suggestion/problem please contact me on spigot :D
+#  • v1.3:
+#   » NEW FEATURES:
+ #   - Added exempt bypass feature (permission: "playerinfo.exempt.bypass") to bypass players that have permission "playerinfo.exempt"
+ #   - Added Background items (Useless items only used for cool look & designs)
+ #   - Added Locked items (Useless items only used for cool look & designs but different from background items they have another ID)
+ #   - Removed Direct Inventory from GUI (Remember that horrible quick inventory that was in the middle of the GUI? yea it has been removed :) which means more slots are now available)
+ #   - Added '/pi reload' command (A configuration reload command)
+ #   - Added Refresh Item (Quick info/gui refresh item in GUI)
+ #   - GUI now has 6 rows instead of 7 (7 rows was a really weird idea)
+ #   - Added a check of lore is set or not (if lore of gui item is not set then there will not be any line in the lore area)
+ #   - Added if player is not wearing armor, the item that will be shown in the gui is now customizable.
+ #   - Added UUID Support & Auto data conversion from player to player's uuid.
+ #   - Added new variables: [player-money] [player-killcause], [player-deathcause] 
+ #   - Added normal deaths causes like fall, lava, etc.
+#   » FIXES:
+ #   - Fixed some bugs in Last Kill & Death (Support mobs now & fixed) 
+ #   - Removed AutoReload (Less lag) 
+ #   - Fixed cancel inventory click while gui is opened (You can't move items while GUI is opened) 
+ #   - Optimized plugin's load messages and checks (Better look & easier code) 
+#  • v1.3.1:
+#   - This is a very important update, in version 1.3 if the server crash and someone has Advanced Player Info GUI opened, then when he join again after the server become online again he won't be able to control his inventory, so this update fixes this problem.
+#   - Fixed Possible data conflicts when 2 players open PlayerInfo GUI at the same time.
+#  • v1.3.2:
+ #   - Added PlaceholderAPI support.
+ #   - Added placeholders.yml file
+#  • v1.3.3:
+ #   - Fixed on load update check permission (not using the correct permission)
+ #   - Added on join update check
+#  • v1.3.4:
+ #   - Added 'pi check'
+#  • v1.3.5:
+ #   - Fixed Folders/Files/Direction path (Wasn't working on multicraft servers and maybe other online hosting servers)
+ #   - Fixed 'Last Kill' lore bug.
+ #   - Fixed 'Locked items' lore bug.
+ #   - Added reset (player|all) command
+ #   - Fixed all lore bugs (Now you can use ' and ' and ', ' in any lore/message)
+#  • v1.3.6:
+ #   - Fixed reset message (I forgot to remove the debug message)
+ #   - Fixed all messages which already had prefix included (now you must add [p] before the messages in the config.yml)
+ #   - Added if argument 2 of '/pi reset' is not set will show correct usage message.
+ #   - Fixed no permissions message wasn't editable
+ #   - NOTE: If Placeholders from PlaceholderAPI didn't work even if you downloaded the expansion you must set PlaceholderAPI to true in skellett plugin's config (plugins/skellett/config.yml -> PlaceholderAPI : true)
+#  • v1.4:
+ #   - Added Live info hologram:
+   #   - Added new hologam.yml file
+   #   - Added move up and down the holograms
+   #   - Added DefaultHeight
+   #   - Added ItemName
+   #   - Added on break while sneaking will remove the hologram
+   #   - Added on right/left click will move the hologram up & down
+   #   - Added '/pi head [player]' to get live holo block of a player
+   #   - Added '/pi holo up/moveup' to get live holo block of a player
+   #   - Added '/pi holo down/movedown' to get live holo block of a player
+   #   - NOTE: when holo is very close to the head (holo block) click events will not work on it you will need to use commands to move it
+   #   - NOTE: using placeholders from placeholderAPI while player is offline will not work and will show the palceholder name
+   #   - SOON: will add custom refresh time
+ #   - Supported if player is offline only in holo blocks but not in GUI.
+ #   - Added config value 'offlinestatus'
+ #   - Added config value 'moveholoup'
+ #   - Added config value 'moveholodown'
+ #   - Added config value 'holocreate'
+ #   - Added config value 'holodelete'
+ #   - Added new permissions:
+   #   - 'playerinfo.hologram.move' to move holograms
+   #   - 'playerinfo.hologram.get' to use '/pi head [player]'
+   #   - 'playerinfo.hologram.place' to place live info holo blocks
+   #   - 'playerinfo.hologram.break' to break live info holo blocks
+   #   - 'playerinfo.cmd.version' to use '/pi version'
+   #   - 'playerinfo.cmd.reload' to use '/pi version'
+   #   - 'playerinfo.cmd.check' to use '/pi version'
+   #   - 'playerinfo.cmd.version' to use '/pi version'
+   #   - 'playerinfo.cmd.reset' to use '/pi reset'
+   #   - 'playerinfo.cmd.gui' to use '/pi [player]' to open GUI
+ #   - Fixed sometimes when using ' and ' or ', ' will break the lines. (again)
+ #   - Added [player-name] variable
+ #   - Fixed bug in online time when server crash time will not reset.
+ #   - Removed help message from config.yml to make it easier for me to update the help message.
+ #  • TODO:
+ #   - Add /pi holo addline <text> √
+ #   - Add /pi holo delline <number> √
+ #   - Add /pi holo setline <number> <text> √
+ #   - Add /pi holo list √
+ #   - Add Click actions in GUI and holograms
+#  • v1.4.1:
+ #   - Added '/pi holo list' to show a list of all created live holograms. (permission: playerinfo.hologram.list)
+ #   - Added some else statments to tell you what you are missing in some actions (like when you do '/pi holo up' while you are not looking at a live holo block a message will show up.)
+#  • v1.4.2:
+ #   - Added /pi holo addline - you must be looking at a live holo block. (to add a new line to a live holo block)
+ #   - Added /pi holo removeline <Line number> - you must be looking at a live holo block. (to remove a specific line from a live holo block)
+ #   - Added /pi holo setline <line number> - you must be looking at a live holo block. (to edit a specific line of a live holo block)
+ #   - Added /pi holo lines - you must be looking at a live holo block. (to get how many lines the targeted live holo block has)
+#  • v1.4.3:
+ #   - Fixed 'holograms doesn't exist' console message (spam).
+#  • v1.4.4:
+ #   - Added custom holograms refresh interval.
+ #   - Fixed a bug in the last update.. the auto config.yml generator was missing the hologramsList value.
+#  • v1.?:
+#   - Support MySQL
+#   - Add advanced info in chat
+# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# -----------
+#
+# ! DON'T EDIT ANY LINE BELOW, NO HELP WILL BE GIVEN IF YOU EDIT ANYTHING DOWN BELOW.
+# ! YOU HAVE NO RIGHTS TO EDIT THE CODE DOWN BELOW OR PUBLISH IT SOMEWHERE ELSE OR GIVE IT TO SOMEONE ELSE. (Caps are only to make you notice this)
+# 
+# -----------
+
+
+options:
+
+
+	# DON'T EDIT
+	cfile: plugins/AdvancedPlayerInfo/config.yml
+	gfile: plugins/AdvancedPlayerInfo/gui.yml
+	pfile: plugins/AdvancedPlayerInfo/placeholders.yml
+	hfile: plugins/AdvancedPlayerInfo/holograms.yml
+
+	console: &8[&b&lAPI&8]
+
+
+
+
+
+
+# --- FUNCTIONS ---
+
+
+# GUI function
+
+
+function openGUI(s: player, p: player, r: boolean = false):
+	# Msg 
+	if {_r} is false:
+		set {_guiopen} to {api::config::msg::guiopen}
+		replace all "[p]" with "%{api::config::msg::prefix}%" in {_guiopen}
+		replace all "[player]" with "%{_p}%" in {_guiopen}
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {_guiopen}
+		send colored "%colored {_guiopen}%" to {_s}
+	# Sound
+		skellett play "%{api::config::sound::opensound}%" to {_s} at volume 1 and pitch 10
+	# GUI name
+		set {_gn} to {api::config::gui::guiname}
+		replace all "[p]" with "%{api::config::msg::prefix}%" in {_gn}
+		replace all "[player]" with "%{_p}%" in {_gn}
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {_gn}
+
+	# NEW V1.3
+		close {_s}'s inventory
+	#wait 2 tick
+		open chest with 6 rows named "%colored {_gn}%" to {_s}
+	#wait 3 tick
+
+	# V1.3
+	set {_sU} to uuid of {_s}
+	set {_pU} to uuid of {_p}
+	#if {api::specialdata::%{_sU}%::invopened} is not set:
+	set {api::specialdata::%{_sU}%::invopened} to true
+
+
+	# Config Quick Reload (REMOVED IN V1.3)
+	#configReload("ReloadCon")
+	#configReload("ReloadGui")
+
+
+
+	# Is OP
+	if {_p} is op:
+		set {api::data::%{_pU}%::isop} to true
+	if {_p} is not op:
+		set {api::data::%{_pU}%::isop} to false
+
+
+
+ 
+	# Background Items (V1.3)
+	
+	loop {api::config::gui::items::backgrounditems::lore::*}:
+		if amount of {api::config::gui::items::backgrounditems::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_backgl::*}
+		else:
+			add "%loop-value%" to {_backgl::*}
+	set {_backglFinal} to "%{_backgl::*}%"
+	replace all colored "{, " with "||" in {_backglFinal}
+	replace all colored "{ and " with "||" in {_backglFinal}
+	variablesCode({_s}, {_p}, {_backglFinal})
+	loop {api::config::gui::items::backgrounditems::slot::*}:
+		#set {_slot} to loop-value parsed as integer
+		add loop-value parsed as integer to {_slots::*}
+	if "%{api::config::gui::items::backgrounditems::enchanted}%" = "true":
+		if {api::config::gui::items::of::lore::*} is set:
+			format a gui slot {_slots::*} of {_s} with glowing {api::config::gui::items::backgrounditems::id} named "%colored {api::config::gui::items::backgrounditems::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {_slots::*} of {_s} with glowing {api::config::gui::items::backgrounditems::id} named "%colored {api::config::gui::items::backgrounditems::name}%" to do nothing
+	if "%{api::config::gui::items::backgrounditems::enchanted}%" = "false":
+		if {api::config::gui::items::backgrounditems::lore::*} is set:
+			format a gui slot {_slots::*} of {_s} with {api::config::gui::items::backgrounditems::id} named "%colored {api::config::gui::items::backgrounditems::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {_slots::*} of {_s} with {api::config::gui::items::backgrounditems::id} named "%colored {api::config::gui::items::backgrounditems::name}%" to do nothing
+
+
+
+
+	# Locked Items (V1.3)
+
+
+	loop {api::config::gui::items::lockeditems::lore::*}:
+		if amount of {api::config::gui::items::lockeditems::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_lockedl::*}
+		else:
+			add "%loop-value%" to {_lockedl::*}
+	set {_lockedlFinal} to "%{_lockedl::*}%"
+	replace all colored "{, " with "||" in {_lockedlFinal}
+	replace all colored "{ and " with "||" in {_lockedlFinal}
+	variablesCode({_s}, {_p}, {_lockedlFinal})
+	loop {api::config::gui::items::lockeditems::slot::*}:
+		#set {_slot1} to loop-value parsed as integer
+		add loop-value parsed as integer to {_slots1::*}
+	if "%{api::config::gui::items::lockeditems::enchanted}%" = "true":
+		if {api::config::gui::items::of::lore::*} is set:
+			format a gui slot {_slots1::*} of {_s} with glowing {api::config::gui::items::lockeditems::id} named "%colored {api::config::gui::items::lockeditems::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {_slots1::*} of {_s} with glowing {api::config::gui::items::lockeditems::id} named "%colored {api::config::gui::items::lockeditems::name}%" to do nothing
+	if "%{api::config::gui::items::lockeditems::enchanted}%" = "false":
+		if {api::config::gui::items::lockeditems::lore::*} is set:
+			format a gui slot {_slots1::*} of {_s} with {api::config::gui::items::lockeditems::id} named "%colored {api::config::gui::items::lockeditems::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {_slots1::*} of {_s} with {api::config::gui::items::lockeditems::id} named "%colored {api::config::gui::items::lockeditems::name}%" to do nothing
+
+
+
+
+	# Public info
+
+	loop {api::config::gui::items::publicinfo::lore::*}:
+		if amount of {api::config::gui::items::publicinfo::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_ll::*}
+		else:
+			add "%loop-value%" to {_ll::*}
+	set {_llFinal} to "%{_ll::*}%"
+	replace all colored "{, " with "||" in {_llFinal}
+	replace all colored "{ and " with "||" in {_llFinal}
+	variablesCode({_s}, {_p}, {_llFinal})
+	#set {_ll::*} to "%colored {api::config::gui::items::publicinfo::lore::*}%"
+	#loop amount of {_ll::*} times:
+		#variablesCode({_s}, {_p}, {_ll::%loop-number%})
+	if "%{api::config::gui::items::publicinfo::enchanted}%" = "true":
+		if {api::config::gui::items::publicinfo::lore::*} is set:
+			format a gui slot {api::config::gui::items::publicinfo::slot} of {_s} with glowing {api::config::gui::items::publicinfo::id} named "%colored {api::config::gui::items::publicinfo::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::publicinfo::slot} of {_s} with glowing {api::config::gui::items::publicinfo::id} named "%colored {api::config::gui::items::publicinfo::name}%" to do nothing
+	if "%{api::config::gui::items::publicinfo::enchanted}%" = "false":
+		if {api::config::gui::items::publicinfo::lore::*} is set:
+			format a gui slot {api::config::gui::items::publicinfo::slot} of {_s} with {api::config::gui::items::publicinfo::id} named "%colored {api::config::gui::items::publicinfo::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::publicinfo::slot} of {_s} with {api::config::gui::items::publicinfo::id} named "%colored {api::config::gui::items::publicinfo::name}%" to do nothing
+
+
+
+
+	# Last Kill
+
+
+	loop {api::config::gui::items::lastkill::lore::*}:
+		if amount of {api::config::gui::items::lastkill::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_lkl::*}
+		else:
+			add "%loop-value%" to {_lkl::*}
+	set {_lklFinal} to "%{_lkl::*}%"
+	replace all colored "{, " with "||" in {_lklFinal}
+	replace all colored "{ and " with "||" in {_lklFinal}
+	variablesCode({_s}, {_p}, {_lklFinal})
+	#set {_lkl::*} to "%colored {api::config::gui::items::lastkill::lore::*}%"
+	#loop amount of {_lkl::*} times:
+		#variablesCode({_s}, {_p}, {_lkl::%loop-number%})
+	if "%{api::config::gui::items::lastkill::enchanted}%" = "true":
+		if {api::data::%{_pU}%::lastkill.name} is set:
+			if {api::config::gui::items::lastkill::lore::*} is set:
+				format a gui slot {api::config::gui::items::lastkill::slot} of {_s} with glowing {api::config::gui::items::lastkill::id} named "%colored {api::config::gui::items::lastkill::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+			else:
+				format a gui slot {api::config::gui::items::lastkill::slot} of {_s} with glowing {api::config::gui::items::lastkill::id} named "%colored {api::config::gui::items::lastkill::name}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::lastkill::slot} of {_s} with glowing {api::config::gui::items::lastkill::id} named "%colored {api::config::gui::items::lastkill::name}%" to do nothing
+
+	if "%{api::config::gui::items::lastkill::enchanted}%" = "false":
+		if {api::data::%{_pU}%::lastkill.name} is set:
+			if {api::config::gui::items::lastkill::lore::*} is set:
+				format a gui slot {api::config::gui::items::lastkill::slot} of {_s} with {api::config::gui::items::lastkill::id} named "%colored {api::config::gui::items::lastkill::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+			else:
+				format a gui slot {api::config::gui::items::lastkill::slot} of {_s} with {api::config::gui::items::lastkill::id} named "%colored {api::config::gui::items::lastkill::name}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::lastkill::slot} of {_s} with {api::config::gui::items::lastkill::id} named "%colored {api::config::gui::items::lastkill::name}%" to do nothing
+
+
+
+
+	# Last Death
+
+
+	loop {api::config::gui::items::lastdeath::lore::*}:
+		if amount of {api::config::gui::items::lastdeath::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_ldl::*}
+		else:
+			add "%loop-value%" to {_ldl::*}
+	set {_ldlFinal} to "%{_ldl::*}%"
+	replace all colored "{, " with "||" in {_ldlFinal}
+	replace all colored "{ and " with "||" in {_ldlFinal}
+	variablesCode({_s}, {_p}, {_ldlFinal})
+	#set {_ldl::*} to "%colored {api::config::gui::items::lastdeath::lore::*}%"
+	#loop amount of {_ldl::*} times:
+		#variablesCode({_s}, {_p}, {_ldl::%loop-number%})
+	if "%{api::config::gui::items::lastdeath::enchanted}%" = "true":
+		if {api::data::%{_pU}%::lastdeath.by} is set:
+			if {api::config::gui::items::lastdeath::lore::*} is set:
+				format a gui slot {api::config::gui::items::lastdeath::slot} of {_s} with glowing {api::config::gui::items::lastdeath::id} named "%colored {api::config::gui::items::lastdeath::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+			else:
+				format a gui slot {api::config::gui::items::lastdeath::slot} of {_s} with glowing {api::config::gui::items::lastdeath::id} named "%colored {api::config::gui::items::lastdeath::name}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::lastdeath::slot} of {_s} with glowing {api::config::gui::items::lastdeath::id} named "%colored {api::config::gui::items::lastdeath::name}%" to do nothing
+	if "%{api::config::gui::items::lastdeath::enchanted}%" = "false":
+		if {api::data::%{_pU}%::lastdeath.by} is set:
+			if {api::config::gui::items::lastdeath::lore::*} is set:
+				format a gui slot {api::config::gui::items::lastdeath::slot} of {_s} with {api::config::gui::items::lastdeath::id} named "%colored {api::config::gui::items::lastdeath::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+			else:
+				format a gui slot {api::config::gui::items::lastdeath::slot} of {_s} with {api::config::gui::items::lastdeath::id} named "%colored {api::config::gui::items::lastdeath::name}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::lastdeath::slot} of {_s} with {api::config::gui::items::lastdeath::id} named "%colored {api::config::gui::items::lastdeath::name}%" to do nothing
+
+
+
+
+	# XP
+
+
+	loop {api::config::gui::items::xp::lore::*}:
+		if amount of {api::config::gui::items::xp::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_xpl::*}
+		else:
+			add "%loop-value%" to {_xpl::*}
+	set {_xplFinal} to "%{_xpl::*}%"
+	replace all colored "{, " with "||" in {_xplFinal}
+	replace all colored "{ and " with "||" in {_xplFinal}
+	variablesCode({_s}, {_p}, {_xplFinal})
+	#set {_xpl::*} to "%colored {api::config::gui::items::xp::lore::*}%"
+	#loop amount of {_xpl::*} times:
+		#variablesCode({_s}, {_p}, {_xpl::%loop-number%})
+	if "%{api::config::gui::items::xp::enchanted}%" = "true":
+		if {api::config::gui::items::xp::lore::*} is set:
+			format a gui slot {api::config::gui::items::xp::slot} of {_s} with glowing {api::config::gui::items::xp::id} named "%colored {api::config::gui::items::xp::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::xp::slot} of {_s} with glowing {api::config::gui::items::xp::id} named "%colored {api::config::gui::items::xp::name}%" to do nothing
+	if "%{api::config::gui::items::xp::enchanted}%" = "false":
+		if {api::config::gui::items::xp::lore::*} is set:
+			format a gui slot {api::config::gui::items::xp::slot} of {_s} with {api::config::gui::items::xp::id} named "%colored {api::config::gui::items::xp::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::xp::slot} of {_s} with {api::config::gui::items::xp::id} named "%colored {api::config::gui::items::xp::name}%" to do nothing
+
+
+
+
+	# Health
+
+
+	loop {api::config::gui::items::health::lore::*}:
+		if amount of {api::config::gui::items::health::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_hl::*}
+		else:
+			add "%loop-value%" to {_hl::*}
+	set {_hlFinal} to "%{_hl::*}%"
+	replace all colored "{, " with "||" in {_hlFinal}
+	replace all colored "{ and " with "||" in {_hlFinal}
+	variablesCode({_s}, {_p}, {_hlFinal})
+	#set {_hl::*} to "%colored {api::config::gui::items::health::lore::*}%"
+	#loop amount of {_hl::*} times:
+		#variablesCode({_s}, {_p}, {_hl::%loop-number%})
+	if "%{api::config::gui::items::health::enchanted}%" = "true":
+		if {api::config::gui::items::health::lore::*} is set:
+			format a gui slot {api::config::gui::items::health::slot} of {_s} with glowing {api::config::gui::items::health::id} named "%colored {api::config::gui::items::health::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::health::slot} of {_s} with glowing {api::config::gui::items::health::id} named "%colored {api::config::gui::items::health::name}%" to do nothing
+	if "%{api::config::gui::items::health::enchanted}%" = "false":
+		if {api::config::gui::items::health::lore::*} is set:
+			format a gui slot {api::config::gui::items::health::slot} of {_s} with {api::config::gui::items::health::id} named "%colored {api::config::gui::items::health::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::health::slot} of {_s} with {api::config::gui::items::health::id} named "%colored {api::config::gui::items::health::name}%" to do nothing
+
+
+
+
+	# Food
+
+
+	loop {api::config::gui::items::food::lore::*}:
+		if amount of {api::config::gui::items::food::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_fl::*}
+		else:
+			add "%loop-value%" to {_fl::*}
+	set {_flFinal} to "%{_fl::*}%"
+	replace all colored "{, " with "||" in {_flFinal}
+	replace all colored "{ and " with "||" in {_flFinal}
+	variablesCode({_s}, {_p}, {_flFinal})
+	#set {_fl::*} to "%colored {api::config::gui::items::food::lore::*}%"
+	#loop amount of {_fl::*} times:
+		#variablesCode({_s}, {_p}, {_fl::%loop-number%})
+	if "%{api::config::gui::items::food::enchanted}%" = "true":
+		if {api::config::gui::items::food::lore::*} is set:
+			format a gui slot {api::config::gui::items::food::slot} of {_s} with glowing {api::config::gui::items::food::id} named "%colored {api::config::gui::items::food::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::food::slot} of {_s} with glowing {api::config::gui::items::food::id} named "%colored {api::config::gui::items::food::name}%" to do nothing
+	if "%{api::config::gui::items::food::enchanted}%" = "false":
+		if {api::config::gui::items::food::lore::*} is set:
+			format a gui slot {api::config::gui::items::food::slot} of {_s} with {api::config::gui::items::food::id} named "%colored {api::config::gui::items::food::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::food::slot} of {_s} with {api::config::gui::items::food::id} named "%colored {api::config::gui::items::food::name}%" to do nothing
+
+
+
+
+	# World
+
+
+	loop {api::config::gui::items::world::lore::*}:
+		if amount of {api::config::gui::items::world::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_wl::*}
+		else:
+			add "%loop-value%" to {_wl::*}
+	set {_wlFinal} to "%{_wl::*}%"
+	replace all colored "{, " with "||" in {_wlFinal}
+	replace all colored "{ and " with "||" in {_wlFinal}
+	variablesCode({_s}, {_p}, {_wlFinal})
+	#set {_wl::*} to "%colored {api::config::gui::items::world::lore::*}%"
+	#loop amount of {_wl::*} times:
+		#variablesCode({_s}, {_p}, {_wl::%loop-number%})
+	if "%{api::config::gui::items::world::enchanted}%" = "true":
+		if {api::config::gui::items::world::lore::*} is set:
+			format a gui slot {api::config::gui::items::world::slot} of {_s} with glowing {api::config::gui::items::world::id} named "%colored {api::config::gui::items::world::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::world::slot} of {_s} with glowing {api::config::gui::items::world::id} named "%colored {api::config::gui::items::world::name}%" to do nothing
+	if "%{api::config::gui::items::world::enchanted}%" = "false":
+		if {api::config::gui::items::world::lore::*} is set:
+			format a gui slot {api::config::gui::items::world::slot} of {_s} with {api::config::gui::items::world::id} named "%colored {api::config::gui::items::world::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::world::slot} of {_s} with {api::config::gui::items::world::id} named "%colored {api::config::gui::items::world::name}%" to do nothing
+
+
+
+
+	# Armor
+
+
+	loop {api::config::gui::items::helmet::lore::*}:
+		if amount of {api::config::gui::items::helmet::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_ah::*}
+		else:
+			add "%loop-value%" to {_ah::*}
+	set {_ahFinal} to "%{_ah::*}%"
+	replace all colored "{, " with "||" in {_ahFinal}
+	replace all colored "{ and " with "||" in {_ahFinal}
+	variablesCode({_s}, {_p}, {_ahFinal})
+	#set {_ah::*} to "%colored {api::config::gui::items::helmet::lore::*}%"
+	#loop amount of {_ah::*} times:
+		#variablesCode({_s}, {_p}, {_ah::%loop-number%})
+	if {_p}'s helmet is not air:
+		if {api::config::gui::items::helmet::lore::*} is set:
+			format a gui slot {api::config::gui::items::helmet::slot} of {_s} with {_p}'s helmet with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::helmet::slot} of {_s} with {_p}'s helmet to do nothing
+	if {_p}'s helmet is air:
+		if {api::config::gui::items::helmet::lore::*} is set:
+			format a gui slot {api::config::gui::items::helmet::slot} of {_s} with {api::config::gui::items::helmet::idnotset} with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::helmet::slot} of {_s} with {api::config::gui::items::helmet::idnotset} to do nothing
+
+
+
+	loop {api::config::gui::items::chestplate::lore::*}:
+		if amount of {api::config::gui::items::chestplate::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_ac::*}
+		else:
+			add "%loop-value%" to {_ac::*}
+	set {_acFinal} to "%{_ac::*}%"
+	replace all colored "{, " with "||" in {_acFinal}
+	replace all colored "{ and " with "||" in {_acFinal}
+	variablesCode({_s}, {_p}, {_acFinal})
+	#set {_ac::*} to "%colored {api::config::gui::items::chestplate::lore::*}%"
+	#loop amount of {_ac::*} times:
+		#variablesCode({_s}, {_p}, {_ac::%loop-number%})
+	if {_p}'s chestplate is not air:
+		if {api::config::gui::items::chestplate::lore::*} is set:
+			format a gui slot {api::config::gui::items::chestplate::slot} of {_s} with {_p}'s chestplate with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::chestplate::slot} of {_s} with {_p}'s chestplate to do nothing
+	if {_p}'s chestplate is air:
+		if {api::config::gui::items::chestplate::lore::*} is set:
+			format a gui slot {api::config::gui::items::chestplate::slot} of {_s} with {api::config::gui::items::chestplate::idnotset} with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::chestplate::slot} of {_s} with {api::config::gui::items::chestplate::idnotset} to do nothing
+
+
+
+	loop {api::config::gui::items::leggings::lore::*}:
+		if amount of {api::config::gui::items::leggings::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_al::*}
+		else:
+			add "%loop-value%" to {_al::*}
+	set {_alFinal} to "%{_al::*}%"
+	replace all colored "{, " with "||" in {_alFinal}
+	replace all colored "{ and " with "||" in {_alFinal}
+	variablesCode({_s}, {_p}, {_alFinal})
+	#set {_al::*} to "%colored {api::config::gui::items::leggings::lore::*}%"
+	#loop amount of {_al::*} times:
+		#variablesCode({_s}, {_p}, {_al::%loop-number%})
+	if {_p}'s leggings is not air:
+		if {api::config::gui::items::leggings::lore::*} is set:
+			format a gui slot {api::config::gui::items::leggings::slot} of {_s} with {_p}'s leggings with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::leggings::slot} of {_s} with {_p}'s leggings to do nothing
+	if {_p}'s leggings is air:
+		if {api::config::gui::items::leggings::lore::*} is set:
+			format a gui slot {api::config::gui::items::leggings::slot} of {_s} with {api::config::gui::items::leggings::idnotset} with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::leggings::slot} of {_s} with {api::config::gui::items::leggings::idnotset} to do nothing
+
+
+
+	loop {api::config::gui::items::boots::lore::*}:
+		if amount of {api::config::gui::items::boots::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_ab::*}
+		else:
+			add "%loop-value%" to {_ab::*}
+	set {_abFinal} to "%{_ab::*}%"
+	replace all colored "{, " with "||" in {_abFinal}
+	replace all colored "{ and " with "||" in {_abFinal}
+	variablesCode({_s}, {_p}, {_abFinal})
+	#set {_ab::*} to "%colored {api::config::gui::items::boots::lore::*}%"
+	#loop amount of {_ab::*} times:
+		#variablesCode({_s}, {_p}, {_ab::%loop-number%})
+	if {_p}'s boots is not air:
+		if {api::config::gui::items::boots::lore::*} is set:
+			format a gui slot {api::config::gui::items::boots::slot} of {_s} with {_p}'s boots with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::boots::slot} of {_s} with {_p}'s boots to do nothing
+	if {_p}'s boots is air:
+		if {api::config::gui::items::boots::lore::*} is set:
+			format a gui slot {api::config::gui::items::boots::slot} of {_s} with {api::config::gui::items::boots::idnotset} with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::boots::slot} of {_s} with {api::config::gui::items::boots::idnotset} to do nothing
+
+
+
+
+	# Current tool
+
+
+	loop {api::config::gui::items::currenttool::lore::*}:
+		if amount of {api::config::gui::items::currenttool::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_ctl::*}
+		else:
+			add "%loop-value%" to {_ctl::*}
+	set {_ctlFinal} to "%{_ctl::*}%"
+	replace all colored "{, " with "||" in {_ctlFinal}
+	replace all colored "{ and " with "||" in {_ctlFinal}
+	variablesCode({_s}, {_p}, {_ctlFinal})
+	#set {_ctl::*} to "%colored {api::config::gui::items::currenttool::lore::*}%"
+	#loop amount of {_ctl::*} times:
+		#variablesCode({_s}, {_p}, {_ctl::%loop-number%})
+	if {api::config::gui::items::currenttool::lore::*} is set:
+		format a gui slot {api::config::gui::items::currenttool::slot} of {_s} with {_p}'s tool with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+	else:
+		format a gui slot {api::config::gui::items::currenttool::slot} of {_s} with {_p}'s tool to do nothing
+
+
+
+
+	# Ping
+
+
+	loop {api::config::gui::items::ping::lore::*}:
+		if amount of {api::config::gui::items::ping::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_pl::*}
+		else:
+			add "%loop-value%" to {_pl::*}
+	set {_plFinal} to "%{_pl::*}%"
+	replace all colored "{, " with "||" in {_plFinal}
+	replace all colored "{ and " with "||" in {_plFinal}
+	variablesCode({_s}, {_p}, {_plFinal})
+	#set {_pl::*} to "%colored {api::config::gui::items::ping::lore::*}%"
+	#loop amount of {_pl::*} times:
+		#variablesCode({_s}, {_p}, {_pl::%loop-number%})
+	if "%{api::config::gui::items::ping::enchanted}%" = "true":
+		if {api::config::gui::items::ping::lore::*} is set:
+			format a gui slot {api::config::gui::items::ping::slot} of {_s} with glowing {api::config::gui::items::ping::id} named "%colored {api::config::gui::items::ping::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::ping::slot} of {_s} with glowing {api::config::gui::items::ping::id} named "%colored {api::config::gui::items::ping::name}%" to do nothing
+	if "%{api::config::gui::items::ping::enchanted}%" = "false":
+		if {api::config::gui::items::ping::lore::*} is set:
+			format a gui slot {api::config::gui::items::ping::slot} of {_s} with {api::config::gui::items::ping::id} named "%colored {api::config::gui::items::ping::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::ping::slot} of {_s} with {api::config::gui::items::ping::id} named "%colored {api::config::gui::items::ping::name}%" to do nothing
+
+
+
+
+	# UUID
+
+
+	loop {api::config::gui::items::uuid::lore::*}:
+		if amount of {api::config::gui::items::uuid::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_uul::*}
+		else:
+			add "%loop-value%" to {_uul::*}
+	set {_uulFinal} to "%{_uul::*}%"
+	replace all colored "{, " with "||" in {_uulFinal}
+	replace all colored "{ and " with "||" in {_uulFinal}
+	variablesCode({_s}, {_p}, {_uulFinal})
+	#set {_uul::*} to "%colored {api::config::gui::items::uuid::lore::*}%"
+	#loop amount of {_uul::*} times:
+		#variablesCode({_s}, {_p}, {_uul::%loop-number%})
+	if "%{api::config::gui::items::uuid::enchanted}%" = "true":
+		if {api::config::gui::items::uuid::lore::*} is set:
+			format a gui slot {api::config::gui::items::uuid::slot} of {_s} with glowing {api::config::gui::items::uuid::id} named "%colored {api::config::gui::items::uuid::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::uuid::slot} of {_s} with glowing {api::config::gui::items::uuid::id} named "%colored {api::config::gui::items::uuid::name}%" to do nothing
+	if "%{api::config::gui::items::uuid::enchanted}%" = "false":
+		if {api::config::gui::items::uuid::lore::*} is set:
+			format a gui slot {api::config::gui::items::uuid::slot} of {_s} with {api::config::gui::items::uuid::id} named "%colored {api::config::gui::items::uuid::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::uuid::slot} of {_s} with {api::config::gui::items::uuid::id} named "%colored {api::config::gui::items::uuid::name}%" to do nothing
+
+
+
+
+	# Last Cmd
+
+
+	loop {api::config::gui::items::lastcmd::lore::*}:
+		if amount of {api::config::gui::items::lastcmd::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_lcml::*}
+		else:
+			add "%loop-value%" to {_lcml::*}
+	set {_lcmlFinal} to "%{_lcml::*}%"
+	replace all colored "{, " with "||" in {_lcmlFinal}
+	replace all colored "{ and " with "||" in {_lcmlFinal}
+	variablesCode({_s}, {_p}, {_lcmlFinal})
+	#set {_lcml::*} to "%colored {api::config::gui::items::lastcmd::lore::*}%"
+	#loop amount of {_lcml::*} times:
+		#variablesCode({_s}, {_p}, {_lcml::%loop-number%})
+		#replace all "[player-lastcmd.cmd]" with "%{api::data::%{_pU}%::lastcmd.cmd}%" in {_lcml::%loop-number%}
+		#replace all "[player-lastcmd-date]" with "%{api::data::%{_pU}%::lastcmd.date}%" in {_lcml::%loop-number%}
+		#replace all "[player-lastcmd-loc]" with "%{api::data::%{_pU}%::lastcmd.loc}%" in {_lcml::%loop-number%}
+		#replace all "[player-lastcmd-world]" with "%{api::data::%{_pU}%::lastcmd.world}%" in {_lcml::%loop-number%}
+	if "%{api::config::gui::items::lastcmd::enchanted}%" = "true":
+		if {api::data::%{_pU}%::lastcmd.cmd} is set:
+			if {api::config::gui::items::lastcmd::lore::*} is set:
+				format a gui slot {api::config::gui::items::lastcmd::slot} of {_s} with glowing {api::config::gui::items::lastcmd::id} named "%colored {api::config::gui::items::lastcmd::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+			else:
+				format a gui slot {api::config::gui::items::lastcmd::slot} of {_s} with glowing {api::config::gui::items::lastcmd::id} named "%colored {api::config::gui::items::lastcmd::name}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::lastcmd::slot} of {_s} with glowing {api::config::gui::items::lastcmd::id} named "%colored {api::config::gui::items::lastcmd::name}%" to do nothing
+	if "%{api::config::gui::items::lastcmd::enchanted}%" = "false":
+		if {api::data::%{_pU}%::lastcmd.cmd} is set:
+			if {api::config::gui::items::lastcmd::lore::*} is set:
+				format a gui slot {api::config::gui::items::lastcmd::slot} of {_s} with {api::config::gui::items::lastcmd::id} named "%colored {api::config::gui::items::lastcmd::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+			else:
+				format a gui slot {api::config::gui::items::lastcmd::slot} of {_s} with {api::config::gui::items::lastcmd::id} named "%colored {api::config::gui::items::lastcmd::name}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::lastcmd::slot} of {_s} with {api::config::gui::items::lastcmd::id} named "%colored {api::config::gui::items::lastcmd::name}%" to do nothing
+
+
+
+
+	# Last Chat
+
+
+	loop {api::config::gui::items::lastchat::lore::*}:
+		if amount of {api::config::gui::items::lastchat::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_lchl::*}
+		else:
+			add "%loop-value%" to {_lchl::*}
+	set {_lchlFinal} to "%{_lchl::*}%"
+	replace all colored "{, " with "||" in {_lchlFinal}
+	replace all colored "{ and " with "||" in {_lchlFinal}
+	variablesCode({_s}, {_p}, {_lchlFinal})
+	#set {_lchl::*} to "%colored {api::config::gui::items::lastchat::lore::*}%"
+	#loop amount of {_lchl::*} times:
+		#variablesCode({_s}, {_p}, {_lchl::%loop-number%})
+	if "%{api::config::gui::items::lastchat::enchanted}%" = "true":
+		if {api::data::%{_pU}%::lastchat.msg} is set:
+			if {api::config::gui::items::lastchat::lore::*} is set:
+				format a gui slot {api::config::gui::items::lastchat::slot} of {_s} with glowing {api::config::gui::items::lastchat::id} named "%colored {api::config::gui::items::lastchat::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+			else:
+				format a gui slot {api::config::gui::items::lastchat::slot} of {_s} with glowing {api::config::gui::items::lastchat::id} named "%colored {api::config::gui::items::lastchat::name}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::lastchat::slot} of {_s} with glowing {api::config::gui::items::lastchat::id} named "%colored {api::config::gui::items::lastchat::name}%" to do nothing
+	if "%{api::config::gui::items::lastchat::enchanted}%" = "false":
+		if {api::data::%{_pU}%::lastchat.msg} is set:
+			if {api::config::gui::items::lastchat::lore::*} is set:
+				format a gui slot {api::config::gui::items::lastchat::slot} of {_s} with {api::config::gui::items::lastchat::id} named "%colored {api::config::gui::items::lastchat::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+			else:
+				format a gui slot {api::config::gui::items::lastchat::slot} of {_s} with {api::config::gui::items::lastchat::id} named "%colored {api::config::gui::items::lastchat::name}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::lastchat::slot} of {_s} with {api::config::gui::items::lastchat::id} named "%colored {api::config::gui::items::lastchat::name}%" to do nothing
+
+
+
+
+	# Last Break
+
+
+	loop {api::config::gui::items::lastblock-break::lore::*}:
+		if amount of {api::config::gui::items::lastblock-break::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_lbl::*}
+		else:
+			add "%loop-value%" to {_lbl::*}
+	set {_lblFinal} to "%{_lbl::*}%"
+	replace all colored "{, " with "||" in {_lblFinal}
+	replace all colored "{ and " with "||" in {_lblFinal}
+	variablesCode({_s}, {_p}, {_lblFinal})
+	#set {_lbl::*} to "%colored {api::config::gui::items::lastblock-break::lore::*}%"
+	#loop amount of {_lbl::*} times:
+		#variablesCode({_s}, {_p}, {_lbl::%loop-number%})
+	if "%{api::config::gui::items::lastblock-break::enchanted}%" = "true":
+		if {api::data::%{_pU}%::lastbreak.block} is set:
+			if {api::config::gui::items::lastblock-break::lore::*} is set:
+				format a gui slot {api::config::gui::items::lastblock-break::slot} of {_s} with glowing {api::config::gui::items::lastblock-break::id} named "%colored {api::config::gui::items::lastblock-break::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+			else:
+				format a gui slot {api::config::gui::items::lastblock-break::slot} of {_s} with glowing {api::config::gui::items::lastblock-break::id} named "%colored {api::config::gui::items::lastblock-break::name}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::lastblock-break::slot} of {_s} with glowing {api::config::gui::items::lastblock-break::id} named "%colored {api::config::gui::items::lastblock-break::name}%" to do nothing
+	if "%{api::config::gui::items::lastblock-break::enchanted}%" = "false":
+		if {api::data::%{_pU}%::lastbreak.block} is set:
+			if {api::config::gui::items::lastblock::lore::*} is set:
+				format a gui slot {api::config::gui::items::lastblock-break::slot} of {_s} with {api::config::gui::items::lastblock-break::id} named "%colored {api::config::gui::items::lastblock-break::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+			else:
+				format a gui slot {api::config::gui::items::lastblock-break::slot} of {_s} with {api::config::gui::items::lastblock-break::id} named "%colored {api::config::gui::items::lastblock-break::name}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::lastblock-break::slot} of {_s} with {api::config::gui::items::lastblock-break::id} named "%colored {api::config::gui::items::lastblock-break::name}%" to do nothing
+
+
+
+
+	# Last Place
+
+
+	loop {api::config::gui::items::lastblock-place::lore::*}:
+		if amount of {api::config::gui::items::lastblock-place::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_lpl::*}
+		else:
+			add "%loop-value%" to {_lpl::*}
+	set {_lplFinal} to "%{_lpl::*}%"
+	replace all colored "{, " with "||" in {_lplFinal}
+	replace all colored "{ and " with "||" in {_lplFinal}
+	variablesCode({_s}, {_p}, {_lplFinal})
+	#set {_lpl::*} to "%colored {api::config::gui::items::lastblock-place::lore::*}%"
+	#loop amount of {_lpl::*} times:
+		#variablesCode({_s}, {_p}, {_lpl::%loop-number%})
+	if "%{api::config::gui::items::lastblock-place::enchanted}%" = "true":
+		if {api::data::%{_pU}%::lastplace.block} is set:
+			if {api::config::gui::items::lastblock-place::lore::*} is set:
+				format a gui slot {api::config::gui::items::lastblock-place::slot} of {_s} with glowing {api::config::gui::items::lastblock-place::id} named "%colored {api::config::gui::items::lastblock-place::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+			else:
+				format a gui slot {api::config::gui::items::lastblock-place::slot} of {_s} with glowing {api::config::gui::items::lastblock-place::id} named "%colored {api::config::gui::items::lastblock-place::name}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::lastblock-place::slot} of {_s} with glowing {api::config::gui::items::lastblock-place::id} named "%colored {api::config::gui::items::lastblock-place::name}%" to do nothing
+	if "%{api::config::gui::items::lastblock-place::enchanted}%" = "false":
+		if {api::data::%{_pU}%::lastplace.block} is set:
+			if {api::config::gui::items::lastblock-place::lore::*} is set:
+				format a gui slot {api::config::gui::items::lastblock-place::slot} of {_s} with {api::config::gui::items::lastblock-place::id} named "%colored {api::config::gui::items::lastblock-place::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+			else:
+				format a gui slot {api::config::gui::items::lastblock-place::slot} of {_s} with {api::config::gui::items::lastblock-place::id} named "%colored {api::config::gui::items::lastblock-place::name}%" to do nothing
+		else:
+			format a gui slot {api::config::gui::items::lastblock-place::slot} of {_s} with {api::config::gui::items::lastblock-place::id} named "%colored {api::config::gui::items::lastblock-place::name}%" to do nothing
+
+
+
+
+	# Inv (REMOVED IN V1.3)
+	#set {_n1} to 18
+	#set {_n2} to 0
+	#loop 36 times:
+		#format a gui slot {_n1} of {_s} with slot {_n2} of {_p}'s inventory to do nothing
+		#set {_n1} to {_n1}+1
+		#set {_n2} to {_n2}+1
+	#set {_n3} to 45
+	#set {_n4} to 0
+
+
+
+
+	# Edit Inv
+
+
+	loop {api::config::gui::items::editinv::lore::*}:
+		if amount of {api::config::gui::items::editinv::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_el::*}
+		else:
+			add "%loop-value%" to {_el::*}
+	set {_elFinal} to "%{_el::*}%"
+	replace all colored "{, " with "||" in {_elFinal}
+	replace all colored "{ and " with "||" in {_elFinal}
+	variablesCode({_s}, {_p}, {_elFinal})
+	#set {_el::*} to "%colored {api::config::gui::items::editinv::lore::*}%"
+	#loop amount of {_el::*} times:
+		#variablesCode({_s}, {_p}, {_el::%loop-number%})
+	set {_ein} to "%colored {api::config::gui::items::editinv::name}%"
+	replace all "[player]" with "%{_p}%" in {_ein}
+	if "%{api::config::gui::items::editinv::enchanted}%" = "true":
+		format a gui slot {api::config::gui::items::editinv::slot} of {_s} with glowing {api::config::gui::items::editinv::id} named "%colored {_ein}%" with lore "%colored {api::var::%{_sU}%::*}%" to run function editInvItem({_s}, {_p})
+	if "%{api::config::gui::items::editinv::enchanted}%" = "false":
+		format a gui slot {api::config::gui::items::editinv::slot} of {_s} with {api::config::gui::items::editinv::id} named "%colored {_ein}%" with lore "%colored {api::var::%{_sU}%::*}%" to run function editInvItem({_s}, {_p})
+
+
+
+
+	# Edit Ender | v1.2
+
+
+	loop {api::config::gui::items::editender::lore::*}:
+		if amount of {api::config::gui::items::editender::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_enl::*}
+		else:
+			add "%loop-value%" to {_enl::*}
+	set {_enlFinal} to "%{_enl::*}%"
+	replace all colored "{, " with "||" in {_enlFinal}
+	replace all colored "{ and " with "||" in {_enlFinal}
+	variablesCode({_s}, {_p}, {_enlFinal})
+	#set {_enl::*} to "%colored {api::config::gui::items::editender::lore::*}%"
+	#loop amount of {_enl::*} times:
+		#variablesCode({_s}, {_p}, {_enl::%loop-number%})
+	set {_een} to "%colored {api::config::gui::items::editender::name}%"
+	replace all "[player]" with "%{_p}%" in {_een}
+	if "%{api::config::gui::items::editender::enchanted}%" = "true":
+		format a gui slot {api::config::gui::items::editender::slot} of {_s} with glowing {api::config::gui::items::editender::id} named "%colored {_een}%" with lore "%colored {api::var::%{_sU}%::*}%" to run function editEnderItem({_s}, {_p})
+	if "%{api::config::gui::items::editender::enchanted}%" = "false":
+		format a gui slot {api::config::gui::items::editender::slot} of {_s} with {api::config::gui::items::editender::id} named "%colored {_een}%" with lore "%colored {api::var::%{_sU}%::*}%" to run function editEnderItem({_s}, {_p})
+
+
+
+
+	# Skull | v1.2
+
+
+	loop {api::config::gui::items::skull::lore::*}:
+		if amount of {api::config::gui::items::skull::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_sl::*}
+		else:
+			add "%loop-value%" to {_sl::*}
+	set {_slFinal} to "%{_sl::*}%"
+	replace all colored "{, " with "||" in {_slFinal}
+	replace all colored "{ and " with "||" in {_slFinal}
+	variablesCode({_s}, {_p}, {_slFinal})
+	#set {_sl::*} to "%colored {api::config::gui::items::skull::lore::*}%"
+	#loop amount of {_sl::*} times:
+		#variablesCode({_s}, {_p}, {_sl::%loop-number%})
+	set {_esn} to "%colored {api::config::gui::items::skull::name}%"
+	replace all "[player]" with "%{_p}%" in {_esn}
+	set {_esi} to "%{api::config::gui::items::skull::skullowner}%" parsed as offlineplayer
+	replace all "[player]" with "%{_p}%" in {_esi}
+	if "%{api::config::gui::items::skull::enchanted}%" = "true":
+		format a gui slot {api::config::gui::items::skull::slot} of {_s} with glowing skull of {_p} named "%colored {_esn}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+	if "%{api::config::gui::items::skull::enchanted}%" = "false":
+		format a gui slot {api::config::gui::items::skull::slot} of {_s} with skull of {_p} named "%colored {_esn}%" with lore "%colored {api::var::%{_sU}%::*}%" to do nothing
+
+
+
+
+	# Close
+
+
+	loop {api::config::gui::items::closeinv::lore::*}:
+		if amount of {api::config::gui::items::closeinv::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_cl::*}
+		else:
+			add "%loop-value%" to {_cl::*}
+	set {_clFinal} to "%{_cl::*}%"
+	replace all colored "{, " with "||" in {_clFinal}
+	replace all colored "{ and " with "||" in {_clFinal}
+	variablesCode({_s}, {_p}, {_clFinal})
+	#set {_cl::*} to "%colored {api::config::gui::items::closeinv::lore::*}%"
+	#loop amount of {_cl::*} times:
+		#variablesCode({_s}, {_p}, {_cl::%loop-number%})
+	if "%{api::config::gui::items::closeinv::enchanted}%" = "true":
+		format a gui slot {api::config::gui::items::closeinv::slot} of {_s} with glowing {api::config::gui::items::closeinv::id} named "%colored {api::config::gui::items::closeinv::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to run function closeItem({_s}, {_p})
+	if "%{api::config::gui::items::closeinv::enchanted}%" = "false":
+		format a gui slot {api::config::gui::items::closeinv::slot} of {_s} with {api::config::gui::items::closeinv::id} named "%colored {api::config::gui::items::closeinv::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to run function closeItem({_s}, {_p})
+
+
+
+
+	# Refresh V1.3
+
+
+	loop {api::config::gui::items::refreshinv::lore::*}:
+		if amount of {api::config::gui::items::refreshinv::lore::*} != loop-index parsed as number:
+			add "%loop-value%{" to {_refl::*}
+		else:
+			add "%loop-value%" to {_refl::*}
+	set {_reflFinal} to "%{_refl::*}%"
+	replace all colored "{, " with "||" in {_reflFinal}
+	replace all colored "{ and " with "||" in {_reflFinal}
+	variablesCode({_s}, {_p}, {_reflFinal})
+	#set {_refl::*} to "%colored {api::config::gui::items::refreshinv::lore::*}%"
+	#loop amount of {_refl::*} times:
+		#variablesCode({_s}, {_p}, {_refl::%loop-number%})
+	if "%{api::config::gui::items::refreshinv::enchanted}%" = "true":
+		format a gui slot {api::config::gui::items::refreshinv::slot} of {_s} with glowing {api::config::gui::items::refreshinv::id} named "%colored {api::config::gui::items::refreshinv::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to run function refreshItem({_s}, {_p})
+	if "%{api::config::gui::items::refreshinv::enchanted}%" = "false":
+		format a gui slot {api::config::gui::items::refreshinv::slot} of {_s} with {api::config::gui::items::refreshinv::id} named "%colored {api::config::gui::items::refreshinv::name}%" with lore "%colored {api::var::%{_sU}%::*}%" to run function refreshItem({_s}, {_p})
+	#stop
+
+
+
+
+
+
+# Custom functions
+
+
+
+
+function closeItem(s: player, p: player):
+	close {_s}'s inventory
+	skellett play "%{api::config::sound::closesound}%" to {_s} at volume 1 and pitch 10
+	set {_guiclose} to {api::config::msg::guiclose}
+	replace all "[player]" with "%{_p}%" in {_guiclose}
+	replace all "[p]" with "%{api::config::msg::prefix}%" in {_guiclose}
+	send colored "%{_guiclose}%" to {_s}
+
+function refreshItem(s: player, p: player):
+	skellett play "%{api::config::sound::refreshsound}%" to {_s} at volume 1 and pitch 10
+	set {_guirefresh} to {api::config::msg::guirefresh}
+	replace all "[player]" with "%{_p}%" in {_guirefresh}
+	replace all "[p]" with "%{api::config::msg::prefix}%" in {_guirefresh}
+	send colored "%{_guirefresh}%" to {_s}
+	openGUI({_s}, {_p}, true)
+
+function editInvItem(s: player, p: player):
+	close {_s}'s inventory
+	open {_p}'s inventory to {_s}
+	skellett play "%{api::config::sound::opensound}%" to {_s} at volume 1 and pitch 10
+	set {_invopen} to {api::config::msg::invopen}
+	replace all "[player]" with "%{_p}%" in {_invopen}
+	replace all "[p]" with "%{api::config::msg::prefix}%" in {_invopen}
+	send colored "%{_invopen}%" to {_s}
+
+function editEnderItem(s: player, p: player):
+	open {_p}'s ender chest to {_s}
+	skellett play "%{api::config::sound::opensound}%" to {_s} at volume 1 and pitch 10
+	set {_enderopen} to {api::config::msg::enderopen}
+	replace all "[player]" with "%{_p}%" in {_enderopen}
+	replace all "[p]" with "%{api::config::msg::prefix}%" in {_enderopen}
+	send colored "%{_enderopen}%" to {_s}
+
+function randomColorPI(t: text) :: text:
+	set {_colors::*} to split "1,2,3,4,5,6,7,8,9,a,b,c,d,e,f" at ","
+	set {_random} to random element out of {_colors::*}
+	return colored "&%{_random}%"
+
+
+
+
+
+
+# Variables function
+
+
+
+
+function variablesCode(s: offlineplayer, t: offlineplayer, text: text, holo: boolean = false, n: number = 0):
+	set {_tU} to uuid of {_t}
+	set {_sU} to uuid of {_s}
+	set {_off} to {api::config::msg::offlinestatus}
+	replace all "[p]" with "%{api::config::msg::prefix}%" in {_off}
+	replace all "[player]" with "%{_t}%" in {_off}
+
+	replace all "[rc]" with "%randomColorPI(""random"")%" in {_text}
+	if {api::data::%{_tU}%::lastcmd.cmd} is set:
+		replace all "[player-lastcmd-cmd]" with "%{api::data::%{_tU}%::lastcmd.cmd}%" in {_text}
+	else:
+		replace all "[player-lastcmd-cmd]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastcmd.date} is set:
+		replace all "[player-lastcmd-date]" with "%{api::data::%{_tU}%::lastcmd.date}%" in {_text}
+	else:
+		replace all "[player-lastcmd-date]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastcmd.loc} is set:
+		replace all "[player-lastcmd-loc]" with "%{api::data::%{_tU}%::lastcmd.loc}%" in {_text}
+	else:
+		replace all "[player-lastcmd-loc]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastcmd.world} is set:
+		replace all "[player-lastcmd-world]" with "%{api::data::%{_tU}%::lastcmd.world}%" in {_text}
+	else:
+		replace all "[player-lastcmd-world]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastchat.msg} is set:
+		replace all "[player-lastchat-msg]" with "%{api::data::%{_tU}%::lastchat.msg}%" in {_text}
+	else:
+		replace all "[player-lastchat-msg]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastchat.date} is set:
+		replace all "[player-lastchat-date]" with "%{api::data::%{_tU}%::lastchat.date}%" in {_text}
+	else:
+		replace all "[player-lastchat-date]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastchat.loc} is set:
+		replace all "[player-lastchat-loc]" with "%{api::data::%{_tU}%::lastchat.loc}%" in {_text}
+	else:
+		replace all "[player-lastchat-loc]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastchat.world} is set:
+		replace all "[player-lastchat-world]" with "%{api::data::%{_tU}%::lastchat.world}%" in {_text}
+	else:
+		replace all "[player-lastchat-world]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastkill.name} is set:
+		replace all "[player-lastkill-victim]" with "%{api::data::%{_tU}%::lastkill.name}%" in {_text}
+	else:
+		replace all "[player-lastkill-victim]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastkill.date} is set:
+		replace all "[player-lastkill-date]" with "%{api::data::%{_tU}%::lastkill.date}%" in {_text}
+	else:
+		replace all "[player-lastkill-date]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastkill.loc} is set:
+		replace all "[player-lastkill-loc]" with "%{api::data::%{_tU}%::lastkill.loc}%" in {_text}
+	else:
+		replace all "[player-lastkill-loc]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastkill.world} is set:
+		replace all "[player-lastkill-world]" with "%{api::data::%{_tU}%::lastkill.world}%" in {_text}
+	else:
+		replace all "[player-lastkill-world]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastdeath.by} is set:
+		replace all "[player-lastdeath-killer]" with "%{api::data::%{_tU}%::lastdeath.by}%" in {_text}
+	else:
+		replace all "[player-lastdeath-killer]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastdeath.date} is set:
+		replace all "[player-lastdeath-date]" with "%{api::data::%{_tU}%::lastdeath.date}%" in {_text}
+	else:
+		replace all "[player-lastdeath-date]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastdeath.loc} is set:
+		replace all "[player-lastdeath-loc]" with "%{api::data::%{_tU}%::lastdeath.loc}%" in {_text}
+	else:
+		replace all "[player-lastdeath-loc]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastdeath.world} is set:
+		replace all "[player-lastdeath-world]" with "%{api::data::%{_tU}%::lastdeath.world}%" in {_text}
+	else:
+		replace all "[player-lastdeath-world]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastplace.block} is set:
+		replace all "[player-lastblockplace-block]" with "%{api::data::%{_tU}%::lastplace.block}%" in {_text}
+	else:
+		replace all "[player-lastblockplace-block]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastplace.date} is set:
+		replace all "[player-lastblockplace-date]" with "%{api::data::%{_tU}%::lastplace.date}%" in {_text}
+	else:
+		replace all "[player-lastblockplace-date]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastplace.loc} is set:
+		replace all "[player-lastblockplace-loc]" with "%{api::data::%{_tU}%::lastplace.loc}%" in {_text}
+	else:
+		replace all "[player-lastblockplace-loc]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastplace.world} is set:
+		replace all "[player-lastblockplace-world]" with "%{api::data::%{_tU}%::lastplace.world}%" in {_text}
+	else:
+		replace all "[player-lastblockplace-world]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastbreak.block} is set:
+		replace all "[player-lastblockbreak-block]" with "%{api::data::%{_tU}%::lastbreak.block}%" in {_text}
+	else:
+		replace all "[player-lastblockbreak-block]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastbreak.date} is set:
+		replace all "[player-lastblockbreak-date]" with "%{api::data::%{_tU}%::lastbreak.date}%" in {_text}
+	else:
+		replace all "[player-lastblockbreak-date]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastbreak.loc} is set:
+		replace all "[player-lastblockbreak-loc]" with "%{api::data::%{_tU}%::lastbreak.loc}%" in {_text}
+	else:
+		replace all "[player-lastblockbreak-loc]" with "%{api::config::msg::nonemsg}%" in {_text}
+	if {api::data::%{_tU}%::lastbreak.world} is set:
+		replace all "[player-lastblockbreak-world]" with "%{api::data::%{_tU}%::lastbreak.world}%" in {_text}
+	else:
+		replace all "[player-lastblockbreak-world]" with "%{api::config::msg::nonemsg}%" in {_text}
+	#replace all "[player-helmet-lore]" with "%lore of {_t}'s helmet%" in {_text}
+	#replace all "[player-chestpalte-lore]" with "%lore of {_t}'s chestplate%" in {_text}
+	#replace all "[player-leggings-lore]" with "%lore of {_t}'s leggings%" in {_text}
+	#replace all "[player-boots-lore]" with "%lore of {_t}'s boots%" in {_text}
+	# V1.3
+	replace all "[player-deathcause]" with "%{api::data::%{_tU}%::lastdeath.deathcause}%" in {_text}
+	replace all "[player-killcause]" with "%{api::data::%{_tU}%::lastkill.killcause}%" in {_text}
+
+
+	if {_t} is online:
+		if {api::data::%{_tU}%::onlinesince.time.hour} is set:
+			replace all "[player-onlinetime]" with "H:M:S » %{api::data::%{_tU}%::onlinesince.time.hour}%:%{api::data::%{_tU}%::onlinesince.time.min}%:%{api::data::%{_tU}%::onlinesince.time.sec}%" in {_text}
+		else:
+			if {api::data::%{_tU}%::onlinesince.time.min} is set:
+				replace all "[player-onlinetime]" with "H:M:S » 0:%{api::data::%{_tU}%::onlinesince.time.min}%:%{api::data::%{_tU}%::onlinesince.time.sec}%" in {_text}
+			else:
+				replace all "[player-onlinetime]" with "H:M:S » 0:0:%{api::data::%{_tU}%::onlinesince.time.sec}%" in {_text}
+	if {api::data::%{_tU}%::chatcount} is set:
+		replace all "[player-chatcount]" with "%{api::data::%{_tU}%::chatcount}%" in {_text}
+	else if {api::data::%{_tU}%::chatcount} is not set:
+		replace all "[player-chatcount]" with "0" in {_text}
+	if {api::data::%{_tU}%::cmdcount} is set:
+		replace all "[player-cmdcount]" with "%{api::data::%{_tU}%::cmdcount}%" in {_text}
+	else if {api::data::%{_tU}%::cmdcount} is not set:
+		replace all "[player-cmdcount]" with "0" in {_text}
+	if {api::data::%{_tU}%::joincount} is set:
+		replace all "[player-joincount]" with "%{api::data::%{_tU}%::joincount}%" in {_text}
+	else if {api::data::%{_tU}%::joincount} is not set:
+		replace all "[player-joincount]" with "0" in {_text}
+	if {api::data::%{_tU}%::quitcount} is set:
+		replace all "[player-quitcount]" with "%{api::data::%{_tU}%::quitcount}%" in {_text}
+	else if {api::data::%{_tU}%::quitcount} is not set:
+		replace all "[player-quitcount]" with "0" in {_text}
+	if {api::data::%{_tU}%::jumpcount} is set:
+		replace all "[player-jumpcount]" with "---" in {_text}
+	else if {api::data::%{_tU}%::jumpcount} is not set:
+		replace all "[player-jumpcount]" with "---" in {_text}
+	if {api::data::%{_tU}%::pickupcount} is set:
+		replace all "[player-pickupcount]" with "%{api::data::%{_tU}%::pickupcount}%" in {_text}
+	else if {api::data::%{_tU}%::pickupcount} is not set:
+		replace all "[player-pickupcount]" with "0" in {_text}
+	if {api::data::%{_tU}%::breakcount} is set:
+		replace all "[player-breakcount]" with "%{api::data::%{_tU}%::breakcount}%" in {_text}
+	else if {api::data::%{_tU}%::breakcount} is not set:
+		replace all "[player-breakcount]" with "0" in {_text}
+	if {api::data::%{_tU}%::placecount} is set:
+		replace all "[player-placecount]" with "%{api::data::%{_tU}%::placecount}%" in {_text}
+	else if {api::data::%{_tU}%::placecount} is not set:
+		replace all "[player-placecount]" with "0" in {_text}
+	if {api::data::%{_tU}%::dropcount} is set:
+		replace all "[player-dropcount]" with "%{api::data::%{_tU}%::dropcount}%" in {_text}
+	else if {api::data::%{_tU}%::dropcount} is not set:
+		replace all "[player-dropcount]" with "0" in {_text}
+	if {api::data::%{_tU}%::mobkillcount} is set:
+		replace all "[player-mobkillcount]" with "%{api::data::%{_tU}%::mobkillcount}%" in {_text}
+	else if {api::data::%{_tU}%::mobkillcount} is not set:
+		replace all "[player-mobkillcount]" with "0" in {_text}
+	if {api::data::%{_tU}%::sneakcount} is set:
+		replace all "[player-sneakcount]" with "%{api::data::%{_tU}%::sneakcount}%" in {_text}
+	else if {api::data::%{_tU}%::sneakcount} is not set:
+		replace all "[player-sneakcount]" with "0" in {_text}
+	if {api::data::%{_tU}%::sprintcount} is set:
+		replace all "[player-sprintcount]" with "%{api::data::%{_tU}%::sprintcount}%" in {_text}
+	else if {api::data::%{_tU}%::sprintcount} is not set:
+		replace all "[player-sprintcount]" with "0" in {_text}
+	if {api::data::%{_tU}%::craftcount} is set:
+		replace all "[player-craftcount]" with "%{api::data::%{_tU}%::craftcount}%" in {_text}
+	else if {api::data::%{_tU}%::craftcount} is not set:
+		replace all "[player-craftcount]" with "0" in {_text}
+	clear {api::data::%{_tU}%::potions::*}
+
+	# V1.3.2 (PlaceholderAPI support)
+	loop {api::config::placeholders::placeholders::*}:
+		set {_v} and {_v0} to skutil yml value "placeholders.%loop-value%" of file "{@pfile}"
+		set {_v} to placeholder "%{_v}%" from {_t}
+		if "%{_v}%" is "%{_v0}%" or "%%%{_v0}%%%":
+			replace all "[%loop-value%]" with "%{_off}%" in {_text}
+		else:
+			replace all "[%loop-value%]" with "%{_v}%" in {_text}
+
+
+	if {_t} is online:
+		replace all "[player-location]" with "%location of {_t}%" in {_text}
+		replace all "[player-ping]" with "%ping of {_t}%" in {_text}
+		replace all "[player-gamemode]" with "%gamemode of {_t}%" in {_text}
+		replace all "[player-flying]" with "%flight state of {_t}%" in {_text}
+		replace all "[player-health]" with "%health of {_t}%" in {_text}
+		replace all "[player-food]" with "%food of {_t}%" in {_text}
+		replace all "[player-helmet-lore]" with "%lore of {_t}'s helmet%" in {_text}
+		replace all "[player-chestplate-lore]" with "%lore of {_t}'s chestplate%" in {_text}
+		replace all "[player-leggings-lore]" with "%lore of {_t}'s leggings%" in {_text}
+		replace all "[player-boots-lore]" with "%lore of {_t}'s boots%" in {_text}
+		replace all "[player-world]" with "%world of {_t}%" in {_text}
+		replace all "[player-tool-lore]" with "%lore of {_t}'s tool%" in {_text}
+		replace all "[player-op]" with "%{api::data::%{_tU}%::isop}%" in {_text}
+		replace all "[player-ip]" with "%ip of {_t}%" in {_text}
+		replace all "[player-name]" with "%{_t}%" in {_text}
+		replace all "[player-xp]" with "%{_t}'s xp%" in {_text}
+		replace all "[player-uuid]" with "%{_tU}%" in {_text}
+		replace all "[player-money]" with "%rounded {_t}'s money%" in {_text}
+		replace all "[player-displayname]" with "%display name of {_t}%" in {_text}
+		if {_holo} = false:
+			loop all active potions on {_t}:
+				add "|| &7- &a%loop-value%&0" to {api::data::%{_tU}%::potions::*}
+			if {api::data::%{_tU}%::potions::*} is set:
+				set {_po::*} to "%{api::data::%{_tU}%::potions::*}%"
+				loop size of {_po::*} times:
+					replace all ", " with " " in {_po::%loop-number%}
+					replace all " and " with " " in {_po::%loop-number%}
+				replace all "[player-potions]" with "%{_po::*}%" in {_text}
+			else if {api::data::%{_tU}%::potions::*} is not set:
+				replace all "[player-potions]" with "No potions" in {_text}
+		else if {_holo} = true:
+			loop all active potions on {_t}:
+				add ";&7- &a%loop-value%&0" to {api::data::%{_tU}%::potions::*}
+			if {api::data::%{_tU}%::potions::*} is set:
+				set {_po::*} to "%{api::data::%{_tU}%::potions::*}%"
+				loop size of {_po::*} times:
+					replace all ", " with " " in {_po::%loop-number%}
+					replace all " and " with " " in {_po::%loop-number%}
+				replace all "[player-potions]" with "%{_po::*}%" in {_text}
+			else if {api::data::%{_tU}%::potions::*} is not set:
+				replace all "[player-potions]" with "No potions" in {_text}
+	else:
+		replace all "[player-money]" with "%{_off}%" in {_text}
+		replace all "[player-name]" with "%{_t}%" in {_text}
+		replace all "[player-uuid]" with "%{_tU}%" in {_text}
+		replace all "[player-gamemode]" with "%{_off}%" in {_text}
+		replace all "[player-health]" with "%{_off}%" in {_text}
+		replace all "[player-food]" with "%{_off}%" in {_text}
+		replace all "[player-xp]" with "%{_off}%" in {_text}
+		replace all "[player-displayname]" with "%{_off}%" in {_text}
+		replace all "[player-location]" with "%{_off}%" in {_text}
+		replace all "[player-ping]" with "%{_off}%" in {_text}
+		replace all "[player-flying]" with "%{_off}%" in {_text}
+		replace all "[player-helmet-lore]" with "%{_off}%" in {_text}
+		replace all "[player-chestplate-lore]" with "%{_off}%" in {_text}
+		replace all "[player-leggings-lore]" with "%{_off}%" in {_text}
+		replace all "[player-boots-lore]" with "%{_off}%" in {_text}
+		replace all "[player-world]" with "%{_off}%" in {_text}
+		replace all "[player-tool-lore]" with "%{_off}%" in {_text}
+		replace all "[player-op]" with "%{_off}%" in {_text}
+		replace all "[player-ip]" with "%{_off}%" in {_text}
+		replace all "[player-onlinetime]" with "%{_off}%" in {_text}
+		replace all "[player-potions]" with "%{_off}%" in {_text}
+
+	if {_holo} = false:
+		set {api::var::%{_sU}%::*} to "%{_text}%"
+	else if {_holo} = true:
+		set {api::config::holograms::list::%{_n}%::linesedited} to {_text}
+
+
+
+
+
+
+
+# Reload function
+
+
+function configReload(t: text):
+	if "%{_t}%" = "ReloadCon":
+		set {api::config::ver::ver} to skutil yml value "version" of file "{@cfile}"
+		set {api::config::msg::prefix} to skutil yml value "prefix" of file "{@cfile}"
+		set {api::config::msg::prefix} to colored {api::config::msg::prefix}
+		#set {api::config::msg::helpmsg::*} to skutil yml list "helpmsg" of file "{@cfile}"
+		set {api::config::msg::noperm} to skutil yml value "noperm" of file "{@cfile}"
+		set {api::config::msg::guiopen} to skutil yml value "gui-open" of file "{@cfile}"
+		set {api::config::msg::guiclose} to skutil yml value "gui-close" of file "{@cfile}"
+		set {api::config::msg::invopen} to skutil yml value "inv-open" of file "{@cfile}"
+		set {api::config::msg::enderopen} to skutil yml value "ender-open" of file "{@cfile}"
+		# V1.3
+		set {api::config::msg::reload} to skutil yml value "reload" of file "{@cfile}"
+		set {api::config::msg::guirefresh} to skutil yml value "guirefresh" of file "{@cfile}"
+		set {api::config::sound::refreshsound} to skutil yml value "refresh-sound" of file "{@cfile}"
+
+		set {api::config::sound::opensound} to skutil yml value "open-sound" of file "{@cfile}"
+		set {api::config::sound::closesound} to skutil yml value "close-sound" of file "{@cfile}"
+		set {api::config::msg::playerisoffline} to skutil yml value "playerisoffline" of file "{@cfile}"
+		set {api::config::msg::exempt} to skutil yml value "exemptmsg" of file "{@cfile}"
+		# v1.4
+		set {api::config::msg::moveholoup} to skutil yml value "moveholoup" of file "{@cfile}"
+		set {api::config::msg::moveholodown} to skutil yml value "moveholodown" of file "{@cfile}"
+		set {api::config::msg::holocreate} to skutil yml value "holocreate" of file "{@cfile}"
+		set {api::config::msg::holodelete} to skutil yml value "holodelete" of file "{@cfile}"
+		set {api::config::msg::offlinestatus} to skutil yml value "offlinestatus" of file "{@cfile}"
+		set {api::config::msg::offlinestatus} to colored {api::config::msg::offlinestatus}
+		set {api::config::msg::nonemsg} to skutil yml value "nonemsg" of file "{@cfile}"
+		set {api::config::msg::nonemsg} to colored {api::config::msg::nonemsg}
+		set {api::config::msg::hologramslist} to skutil yml value "hologramslist" of file "{@cfile}"
+		set {api::config::msg::hologramslist} to colored {api::config::msg::hologramslist}
+		# 1.4.4
+		set {api::config::msg::hologramsrefresh} to skutil yml value "hologramsrefresh" of file "{@cfile}"
+		set {api::config::msg::hologramsrefresh} to {api::config::msg::hologramsrefresh} parsed as integer
+
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::msg::prefix}
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::msg::noperm}
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::msg::guiopen}
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::msg::invopen}
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::msg::enderopen}
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::msg::playerisoffline}
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::msg::exempt}
+
+	if "%{_t}%" = "ReloadPlaceholders":
+		set {api::config::placeholders::placeholders::*} to skutil yml nodes "placeholders" of file "{@pfile}"
+
+	if "%{_t}%" = "ReloadHolo":
+		if skutil yml nodes "settings" of file "{@hfile}" doesn't exist:
+			set yml value "settings.defaultheight" of file "{@hfile}" to "2"
+			set yml value "settings.itemname" of file "{@hfile}" to "%{api::config::holograms::settings::itemname}%"
+			set {api::config::holograms::settings::defaultheight} to skutil yml value "settings.defaultheight" of file "{@hfile}"
+			set {api::config::holograms::settings::defaultheight} to {api::config::holograms::settings::defaultheight} parsed as number
+			set {api::config::holograms::settings::itemname} to skutil yml value "settings.itemname" of file "{@hfile}"
+			set {api::config::holograms::settings::itemname} to colored {api::config::holograms::settings::itemname}
+			send "{@console} &aGenerated &f'holograms.yml'&a file successfully." to console
+		else:
+			set {api::config::holograms::settings::defaultheight} to skutil yml value "settings.defaultheight" of file "{@hfile}"
+			set {api::config::holograms::settings::defaultheight} to {api::config::holograms::settings::defaultheight} parsed as number
+			set {api::config::holograms::settings::itemname} to skutil yml value "settings.itemname" of file "{@hfile}"
+		if {api::config::holograms::settings::defaultheight} is smaller than 1:
+			set yml value "settings.defaultheight" of file "{@hfile}" to "2"
+			send "{@console} &cWARNING: &fDefaultHeight value is lower than 1 it's has been set to 2" to console
+		if skutil yml nodes "holograms" of file "{@hfile}" exists:
+			set {api::config::holograms::list::*} to skutil yml nodes "holograms" of file "{@hfile}"
+			loop {api::config::holograms::list::*}:
+				set {api::config::holograms::list::%loop-value%::owner} to skutil yml value "holograms.%loop-value%.owner" of file "{@hfile}"
+				set {api::config::holograms::list::%loop-value%::owneruuid} to skutil yml value "holograms.%loop-value%.owneruuid" of file "{@hfile}"
+				set {api::config::holograms::list::%loop-value%::world} to skutil yml value "holograms.%loop-value%.world" of file "{@hfile}"
+				set {api::config::holograms::list::%loop-value%::location} to skutil yml value "holograms.%loop-value%.location" of file "{@hfile}"
+				set {api::config::holograms::list::%loop-value%::height} to skutil yml value "holograms.%loop-value%.height" of file "{@hfile}"
+				set {api::config::holograms::list::%loop-value%::height} to {api::config::holograms::list::%loop-value%::height} parsed as number
+				set {api::config::holograms::list::%loop-value%::lines::*} to skutil yml list "holograms.%loop-value%.lines" of file "{@hfile}"
+		else:
+			clear {api::config::holograms::list::*}
+			set {api::config::holograms::list::*} to skutil yml nodes "holograms" of file "{@hfile}"
+			loop {api::config::holograms::list::*}:
+				set {api::config::holograms::list::%loop-value%::owner} to skutil yml value "holograms.%loop-value%.owner" of file "{@hfile}"
+				set {api::config::holograms::list::%loop-value%::owneruuid} to skutil yml value "holograms.%loop-value%.owneruuid" of file "{@hfile}"
+				set {api::config::holograms::list::%loop-value%::world} to skutil yml value "holograms.%loop-value%.world" of file "{@hfile}"
+				set {api::config::holograms::list::%loop-value%::location} to skutil yml value "holograms.%loop-value%.location" of file "{@hfile}"
+				set {api::config::holograms::list::%loop-value%::height} to skutil yml value "holograms.%loop-value%.height" of file "{@hfile}"
+				set {api::config::holograms::list::%loop-value%::height} to {api::config::holograms::list::%loop-value%::height} parsed as number
+				set {api::config::holograms::list::%loop-value%::lines::*} to skutil yml list "holograms.%loop-value%.lines" of file "{@hfile}"
+
+		#set {api::config::holograms::defaultlines::*} to skutil yml list "defaultlines" of file "{@hfile}"
+
+
+	if "%{_t}%" = "ReloadGui":
+		set {api::config::gui::guiname} to skutil yml value "GUI-name" of file "{@gfile}"
+
+		set {api::config::gui::items::publicinfo::id} to skutil yml value "items.publicinfo.id" of file "{@gfile}"
+		set {api::config::gui::items::publicinfo::id} to {api::config::gui::items::publicinfo::id} parsed as item type
+		set {api::config::gui::items::publicinfo::name} to skutil yml value "items.publicinfo.name" of file "{@gfile}"
+		set {api::config::gui::items::publicinfo::slot} to skutil yml value "items.publicinfo.slot" of file "{@gfile}"
+		set {api::config::gui::items::publicinfo::slot} to {api::config::gui::items::publicinfo::slot} parsed as integer
+		#set {_lr0::*} to yml list "items.publicinfo.lore" of file "{@gfile}"
+		#if {_lr0::*} is set:
+		if yml list "items.publicinfo.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::publicinfo::lore::*} to yml list "items.publicinfo.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::publicinfo::lore::*}
+
+		set {api::config::gui::items::publicinfo::enchanted} to skutil yml value "items.publicinfo.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::publicinfo::name}
+
+		set {api::config::gui::items::xp::id} to skutil yml value "items.xp.id" of file "{@gfile}"
+		set {api::config::gui::items::xp::id} to {api::config::gui::items::xp::id} parsed as item type
+		set {api::config::gui::items::xp::name} to skutil yml value "items.xp.name" of file "{@gfile}"
+		set {api::config::gui::items::xp::slot} to skutil yml value "items.xp.slot" of file "{@gfile}"
+		set {api::config::gui::items::xp::slot} to {api::config::gui::items::xp::slot} parsed as integer
+		if yml list "items.xp.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::xp::lore::*} to yml list "items.xp.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::xp::lore::*}
+		set {api::config::gui::items::xp::enchanted} to skutil yml value "items.xp.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::xp::name}
+
+		#set {api::config::gui::items::helmet::id} to skutil yml value "items.helmet.id" of file "{@gfile}" parsed as item type
+		set {api::config::gui::items::helmet::idnotset} to skutil yml value "items.helmet.idnotset" of file "{@gfile}"
+		set {api::config::gui::items::helmet::idnotset} to {api::config::gui::items::helmet::idnotset} parsed as item type
+		#set {api::config::gui::items::helmet::name} to skutil yml value "items.helmet.name" of file "{@gfile}"
+		set {api::config::gui::items::helmet::slot} to skutil yml value "items.helmet.slot" of file "{@gfile}"
+		set {api::config::gui::items::helmet::slot} to {api::config::gui::items::helmet::slot} parsed as integer
+		if yml list "items.helmet.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::helmet::lore::*} to yml list "items.helmet.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::helmet::lore::*}
+
+
+		#set {api::config::gui::items::chestplate::id} to skutil yml value "items.chestplate.id" of file "{@gfile}"
+		#set {api::config::gui::items::chestplate::id} to {api::config::gui::items::chestplate::id} parsed as item type
+		set {api::config::gui::items::chestplate::idnotset} to skutil yml value "items.chestplate.idnotset" of file "{@gfile}"
+		set {api::config::gui::items::chestplate::idnotset} to {api::config::gui::items::chestplate::idnotset} parsed as item type
+		#set {api::config::gui::items::chestplate::name} to skutil yml value "items.chestplate.name" of file "{@gfile}"
+		set {api::config::gui::items::chestplate::slot} to skutil yml value "items.chestplate.slot" of file "{@gfile}"
+		set {api::config::gui::items::chestplate::slot} to {api::config::gui::items::chestplate::slot} parsed as integer
+		if yml list "items.chestplate.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::chestplate::lore::*} to yml list "items.chestplate.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::chestplate::lore::*}
+
+
+		#set {api::config::gui::items::leggings::id} to skutil yml value "items.leggings.id" of file "{@gfile}"
+		#set {api::config::gui::items::leggings::id} to {api::config::gui::items::leggings::id} parsed as item type
+		set {api::config::gui::items::leggings::idnotset} to skutil yml value "items.leggings.idnotset" of file "{@gfile}"
+		set {api::config::gui::items::leggings::idnotset} to {api::config::gui::items::leggings::idnotset} parsed as item type
+		#set {api::config::gui::items::leggings::name} to skutil yml value "items.leggings.name" of file "{@gfile}"
+		set {api::config::gui::items::leggings::slot} to skutil yml value "items.leggings.slot" of file "{@gfile}"
+		set {api::config::gui::items::leggings::slot} to {api::config::gui::items::leggings::slot} parsed as integer
+		if yml list "items.leggings.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::leggings::lore::*} to yml list "items.leggings.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::leggings::lore::*}
+
+
+		#set {api::config::gui::items::boots::id} to skutil yml value "items.boots.id" of file "{@gfile}"
+		#set {api::config::gui::items::boots::id} to {api::config::gui::items::boots::id} parsed as item type
+		set {api::config::gui::items::boots::idnotset} to skutil yml value "items.boots.idnotset" of file "{@gfile}"
+		set {api::config::gui::items::boots::idnotset} to {api::config::gui::items::boots::idnotset} parsed as item type
+		#set {api::config::gui::items::boots::name} to skutil yml value "items.boots.name" of file "{@gfile}"
+		set {api::config::gui::items::boots::slot} to skutil yml value "items.boots.slot" of file "{@gfile}"
+		set {api::config::gui::items::boots::slot} to {api::config::gui::items::boots::slot} parsed as integer
+		if yml list "items.boots.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::boots::lore::*} to yml list "items.boots.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::boots::lore::*}
+
+
+		set {api::config::gui::items::health::id} to skutil yml value "items.health.id" of file "{@gfile}"
+		set {api::config::gui::items::health::id} to {api::config::gui::items::health::id} parsed as item type
+		set {api::config::gui::items::health::name} to skutil yml value "items.health.name" of file "{@gfile}"
+		set {api::config::gui::items::health::slot} to skutil yml value "items.health.slot" of file "{@gfile}"
+		set {api::config::gui::items::health::slot} to {api::config::gui::items::health::slot} parsed as integer
+		if yml list "items.health.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::health::lore::*} to yml list "items.health.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::health::lore::*}
+
+		set {api::config::gui::items::health::enchanted} to skutil yml value "items.health.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::health::name} # "[rc1]"
+
+		set {api::config::gui::items::food::id} to skutil yml value "items.food.id" of file "{@gfile}"
+		set {api::config::gui::items::food::id} to {api::config::gui::items::food::id} parsed as item type
+		set {api::config::gui::items::food::name} to skutil yml value "items.food.name" of file "{@gfile}"
+		set {api::config::gui::items::food::slot} to skutil yml value "items.food.slot" of file "{@gfile}"
+		set {api::config::gui::items::food::slot} to {api::config::gui::items::food::slot} parsed as integer
+		if yml list "items.food.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::food::lore::*} to yml list "items.food.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::food::lore::*}
+
+		set {api::config::gui::items::food::enchanted} to skutil yml value "items.food.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::food::name} # "[rc1]"
+
+		set {api::config::gui::items::lastcmd::id} to skutil yml value "items.lastcmd.id" of file "{@gfile}"
+		set {api::config::gui::items::lastcmd::id} to {api::config::gui::items::lastcmd::id} parsed as item type
+		set {api::config::gui::items::lastcmd::name} to skutil yml value "items.lastcmd.name" of file "{@gfile}"
+		set {api::config::gui::items::lastcmd::slot} to skutil yml value "items.lastcmd.slot" of file "{@gfile}"
+		set {api::config::gui::items::lastcmd::slot} to {api::config::gui::items::lastcmd::slot} parsed as integer
+		if yml list "items.lastcmd.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::lastcmd::lore::*} to yml list "items.lastcmd.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::lastcmd::lore::*}
+
+		# Removed in V1.3
+		#set {api::config::gui::items::lastcmd::lore2::*} to yml list "items.lastcmd.loreNone" of file "{@gfile}"
+		set {api::config::gui::items::lastcmd::enchanted} to skutil yml value "items.lastcmd.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::lastcmd::name} # "[rc1]"
+
+		set {api::config::gui::items::lastchat::id} to skutil yml value "items.lastchat.id" of file "{@gfile}"
+		set {api::config::gui::items::lastchat::id} to {api::config::gui::items::lastchat::id} parsed as item type
+		set {api::config::gui::items::lastchat::name} to skutil yml value "items.lastchat.name" of file "{@gfile}"
+		set {api::config::gui::items::lastchat::slot} to skutil yml value "items.lastchat.slot" of file "{@gfile}"
+		set {api::config::gui::items::lastchat::slot} to {api::config::gui::items::lastchat::slot} parsed as integer
+		if yml list "items.lastchat.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::lastchat::lore::*} to yml list "items.lastchat.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::lastchat::lore::*}
+
+		#set {api::config::gui::items::lastchat::lore2::*} to yml list "items.lastchat.loreNone" of file "{@gfile}"
+		set {api::config::gui::items::lastchat::enchanted} to skutil yml value "items.lastchat.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::lastchat::name} # "[rc1]"
+
+		set {api::config::gui::items::lastkill::id} to skutil yml value "items.lastkill.id" of file "{@gfile}"
+		set {api::config::gui::items::lastkill::id} to {api::config::gui::items::lastkill::id} parsed as item type
+		set {api::config::gui::items::lastkill::name} to skutil yml value "items.lastkill.name" of file "{@gfile}"
+		set {api::config::gui::items::lastkill::slot} to skutil yml value "items.lastkill.slot" of file "{@gfile}"
+		set {api::config::gui::items::lastkill::slot} to {api::config::gui::items::lastkill::slot} parsed as integer
+		if yml list "items.lastkill.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::lastkill::lore::*} to yml list "items.lastkill.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::lastkill::lore::*}
+
+		#set {api::config::gui::items::lastkill::lore2::*} to yml list "items.lastkill.loreNone" of file "{@gfile}"
+		set {api::config::gui::items::lastkill::enchanted} to skutil yml value "items.lastkill.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::lastkill::name} # "[rc1]"
+
+		set {api::config::gui::items::lastdeath::id} to skutil yml value "items.lastdeath.id" of file "{@gfile}"
+		set {api::config::gui::items::lastdeath::id} to {api::config::gui::items::lastdeath::id} parsed as item type
+		set {api::config::gui::items::lastdeath::name} to skutil yml value "items.lastdeath.name" of file "{@gfile}"
+		set {api::config::gui::items::lastdeath::slot} to skutil yml value "items.lastdeath.slot" of file "{@gfile}"
+		set {api::config::gui::items::lastdeath::slot} to {api::config::gui::items::lastdeath::slot} parsed as integer
+		if yml list "items.lastdeath.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::lastdeath::lore::*} to yml list "items.lastdeath.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::lastdeath::lore::*}
+
+		#set {api::config::gui::items::lastdeath::lore2::*} to yml list "items.lastdeath.loreNone" of file "{@gfile}"
+		set {api::config::gui::items::lastdeath::enchanted} to skutil yml value "items.lastdeath.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::lastdeath::name} # "[rc1]"
+
+		set {api::config::gui::items::world::id} to skutil yml value "items.world.id" of file "{@gfile}"
+		set {api::config::gui::items::world::id} to {api::config::gui::items::world::id} parsed as item type
+		set {api::config::gui::items::world::name} to skutil yml value "items.world.name" of file "{@gfile}"
+		set {api::config::gui::items::world::slot} to skutil yml value "items.world.slot" of file "{@gfile}"
+		set {api::config::gui::items::world::slot} to {api::config::gui::items::world::slot} parsed as integer
+		if yml list "items.world.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::world::lore::*} to yml list "items.world.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::world::lore::*}
+
+		set {api::config::gui::items::world::enchanted} to skutil yml value "items.world.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::world::name} # "[rc1]"
+
+		set {api::config::gui::items::ping::id} to skutil yml value "items.ping.id" of file "{@gfile}"
+		set {api::config::gui::items::ping::id} to {api::config::gui::items::ping::id} parsed as item type
+		set {api::config::gui::items::ping::name} to skutil yml value "items.ping.name" of file "{@gfile}"
+		set {api::config::gui::items::ping::slot} to skutil yml value "items.ping.slot" of file "{@gfile}"
+		set {api::config::gui::items::ping::slot} to {api::config::gui::items::ping::slot} parsed as integer
+		if yml list "items.ping.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::ping::lore::*} to yml list "items.ping.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::ping::lore::*}
+
+		set {api::config::gui::items::ping::enchanted} to skutil yml value "items.ping.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::ping::name} # "[rc1]"
+
+		#set {api::config::gui::items::currenttool::id} to skutil yml value "items.currenttool.id" of file "{@gfile}"
+		#set {api::config::gui::items::currenttool::id} to {api::config::gui::items::currenttool::id} parsed as item type
+		#set {api::config::gui::items::currenttool::name} to skutil yml value "items.currenttool.name" of file "{@gfile}"
+		set {api::config::gui::items::currenttool::slot} to skutil yml value "items.currenttool.slot" of file "{@gfile}"
+		set {api::config::gui::items::currenttool::slot} to {api::config::gui::items::currenttool::slot} parsed as integer
+		if yml list "items.currenttool.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::currenttool::lore::*} to yml list "items.currenttool.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::currenttool::lore::*}
+
+
+		set {api::config::gui::items::lastblock-place::id} to skutil yml value "items.lastblock-place.id" of file "{@gfile}"
+		set {api::config::gui::items::lastblock-place::id} to colored {api::config::gui::items::lastblock-place::id} parsed as item type
+		set {api::config::gui::items::lastblock-place::name} to skutil yml value "items.lastblock-place.name" of file "{@gfile}"
+		set {api::config::gui::items::lastblock-place::slot} to skutil yml value "items.lastblock-place.slot" of file "{@gfile}"
+		set {api::config::gui::items::lastblock-place::slot} to colored {api::config::gui::items::lastblock-place::slot} parsed as integer
+		if yml list "items.lastblock-place.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::lastblock-place::lore::*} to yml list "items.lastblock-place.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::lastblock-place::lore::*}
+
+		#set {api::config::gui::items::lastblock-place::lore2::*} to yml list "items.lastblock-place.loreNone" of file "{@gfile}"
+		set {api::config::gui::items::lastblock-place::enchanted} to skutil yml value "items.lastblock-place.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::lastblock-place::name} # "[rc1]"
+
+		set {api::config::gui::items::lastblock-break::id} to skutil yml value "items.lastblock-break.id" of file "{@gfile}"
+		set {api::config::gui::items::lastblock-break::id} to colored {api::config::gui::items::lastblock-break::id} parsed as item type
+		set {api::config::gui::items::lastblock-break::name} to skutil yml value "items.lastblock-break.name" of file "{@gfile}"
+		set {api::config::gui::items::lastblock-break::slot} to skutil yml value "items.lastblock-break.slot" of file "{@gfile}"
+		set {api::config::gui::items::lastblock-break::slot} to colored {api::config::gui::items::lastblock-break::slot} parsed as integer
+		if yml list "items.lastblock-break.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::lastblock-break::lore::*} to yml list "items.lastblock-break.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::lastblock-break::lore::*}
+
+		#set {api::config::gui::items::lastblock-break::lore2::*} to yml list "items.lastblock-break.loreNone" of file "{@gfile}"
+		set {api::config::gui::items::lastblock-break::enchanted} to skutil yml value "items.lastblock-break.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::lastblock-break::name} # "[rc1]"
+
+		set {api::config::gui::items::uuid::id} to skutil yml value "items.uuid.id" of file "{@gfile}"
+		set {api::config::gui::items::uuid::id} to {api::config::gui::items::uuid::id} parsed as item type
+		set {api::config::gui::items::uuid::name} to skutil yml value "items.uuid.name" of file "{@gfile}"
+		set {api::config::gui::items::uuid::slot} to skutil yml value "items.uuid.slot" of file "{@gfile}"
+		set {api::config::gui::items::uuid::slot} to {api::config::gui::items::uuid::slot} parsed as integer
+		if yml list "items.uuid.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::uuid::lore::*} to yml list "items.uuid.lore" of file "{@gfile}"
+		else:
+			set {api::config::gui::items::uuid::lore::*} to ""
+
+		set {api::config::gui::items::uuid::enchanted} to skutil yml value "items.uuid.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::uuid::name} # "[rc1]"
+
+		set {api::config::gui::items::closeinv::id} to skutil yml value "items.closeinv.id" of file "{@gfile}"
+		set {api::config::gui::items::closeinv::id} to {api::config::gui::items::closeinv::id} parsed as item type
+		set {api::config::gui::items::closeinv::name} to skutil yml value "items.closeinv.name" of file "{@gfile}"
+		set {api::config::gui::items::closeinv::slot} to skutil yml value "items.closeinv.slot" of file "{@gfile}"
+		set {api::config::gui::items::closeinv::slot} to {api::config::gui::items::closeinv::slot} parsed as integer
+		if yml list "items.closeinv.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::closeinv::lore::*} to yml list "items.closeinv.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::closeinv::lore::*}
+
+		set {api::config::gui::items::closeinv::enchanted} to skutil yml value "items.closeinv.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::closeinv::name} # "[rc1]"
+
+		set {api::config::gui::items::editinv::id} to skutil yml value "items.editinv.id" of file "{@gfile}"
+		set {api::config::gui::items::editinv::id} to {api::config::gui::items::editinv::id} parsed as item type
+		set {api::config::gui::items::editinv::name} to skutil yml value "items.editinv.name" of file "{@gfile}"
+		set {api::config::gui::items::editinv::slot} to skutil yml value "items.editinv.slot" of file "{@gfile}"
+		set {api::config::gui::items::editinv::slot} to {api::config::gui::items::editinv::slot} parsed as integer
+		if yml list "items.editinv.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::editinv::lore::*} to yml list "items.editinv.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::editinv::lore::*}
+
+		set {api::config::gui::items::editinv::enchanted} to skutil yml value "items.editinv.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::editinv::name} # "[rc1]"
+
+		set {api::config::gui::items::skull::name} to skutil yml value "items.skull.name" of file "{@gfile}"
+		set {api::config::gui::items::skull::slot} to skutil yml value "items.skull.slot" of file "{@gfile}"
+		set {api::config::gui::items::skull::slot} to {api::config::gui::items::skull::slot} parsed as integer
+		if yml list "items.skull.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::skull::lore::*} to yml list "items.skull.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::skull::lore::*}
+
+		set {api::config::gui::items::skull::enchanted} to skutil yml value "items.skull.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::skull::name} # "[rc1]"
+
+		set {api::config::gui::items::editender::id} to skutil yml value "items.editender.id" of file "{@gfile}"
+		set {api::config::gui::items::editender::id} to {api::config::gui::items::editender::id} parsed as item type
+		set {api::config::gui::items::editender::name} to skutil yml value "items.editender.name" of file "{@gfile}"
+		set {api::config::gui::items::editender::slot} to skutil yml value "items.editender.slot" of file "{@gfile}"
+		set {api::config::gui::items::editender::slot} to {api::config::gui::items::editender::slot} parsed as integer
+		if yml list "items.editender.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::editender::lore::*} to yml list "items.editender.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::editender::lore::*}
+
+		set {api::config::gui::items::editender::enchanted} to skutil yml value "items.editender.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::editender::name} # "[rc1]"
+
+		# V1.3
+		set {api::config::gui::items::refreshinv::id} to skutil yml value "items.refreshinv.id" of file "{@gfile}"
+		set {api::config::gui::items::refreshinv::id} to {api::config::gui::items::refreshinv::id} parsed as item type
+		set {api::config::gui::items::refreshinv::name} to skutil yml value "items.refreshinv.name" of file "{@gfile}"
+		set {api::config::gui::items::refreshinv::slot} to skutil yml value "items.refreshinv.slot" of file "{@gfile}"
+		set {api::config::gui::items::refreshinv::slot} to {api::config::gui::items::refreshinv::slot} parsed as integer
+		if yml list "items.refreshinv.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::refreshinv::lore::*} to yml list "items.refreshinv.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::refreshinv::lore::*}
+
+		set {api::config::gui::items::refreshinv::enchanted} to skutil yml value "items.refreshinv.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::refreshinv::name} # "[rc1]"
+
+		set {api::config::gui::items::backgrounditems::id} to skutil yml value "items.backgrounditems.id" of file "{@gfile}"
+		set {api::config::gui::items::backgrounditems::id} to {api::config::gui::items::backgrounditems::id} parsed as item type
+		set {api::config::gui::items::backgrounditems::name} to skutil yml value "items.backgrounditems.name" of file "{@gfile}"
+		set {api::config::gui::items::backgrounditems::slot::*} to yml list "items.backgrounditems.slot" of file "{@gfile}"
+		#set {api::config::gui::items::backgrounditems::slot::*} to {api::config::gui::items::backgrounditems::slot::*} parsed as integer
+		if yml list "items.backgrounditems.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::backgrounditems::lore::*} to yml list "items.backgrounditems.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::backgrounditems::lore::*}
+		set {api::config::gui::items::backgrounditems::enchanted} to skutil yml value "items.backgrounditems.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::backgrounditems::name} # "[rc1]"
+
+		set {api::config::gui::items::lockeditems::id} to skutil yml value "items.lockeditems.id" of file "{@gfile}"
+		set {api::config::gui::items::lockeditems::id} to {api::config::gui::items::lockeditems::id} parsed as item type
+		set {api::config::gui::items::lockeditems::name} to skutil yml value "items.lockeditems.name" of file "{@gfile}"
+		set {api::config::gui::items::lockeditems::slot::*} to yml list "items.lockeditems.slot" of file "{@gfile}"
+		#set {api::config::gui::items::lockeditems::slot::*} to {api::config::gui::items::lockeditems::slot::*} parsed as integer
+		if yml list "items.lockeditems.lore" of file "{@gfile}" is set:
+			set {api::config::gui::items::lockeditems::lore::*} to yml list "items.lockeditems.lore" of file "{@gfile}"
+		else:
+			clear {api::config::gui::items::lockeditems::lore::*}
+		set {api::config::gui::items::lockeditems::enchanted} to skutil yml value "items.lockeditems.enchanted" of file "{@gfile}"
+		replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::lockeditems::name} # "[rc1]"
+
+		#set {api::config::gui::items::editender::id} to skutil yml value "items.editender.id" of file "{@gfile}"
+		#set {api::config::gui::items::editender::id} to {api::config::gui::items::editender::id} parsed as item type
+		#set {api::config::gui::items::editender::name} to skutil yml value "items.editender.name" of file "{@gfile}"
+		#set {api::config::gui::items::editender::slot} to skutil yml value "items.editender.slot" of file "{@gfile}"
+		#set {api::config::gui::items::editender::slot} to {api::config::gui::items::editender::slot} parsed as integer
+		#set {api::config::gui::items::editender::lore::*} to yml list "items.editender.lore" of file "{@gfile}"
+		#set {api::config::gui::items::editender::enchanted} to skutil yml value "items.editender.enchanted" of file "{@gfile}"
+		#replace all "[rc]" with "%randomColorPI(""random"")%" in {api::config::gui::items::editender::name} # "[rc1]"
+
+
+function holoTP(loc: text, world: world) :: location:
+   set {_locpart::*} to {_loc} parsed as "x: %num%, y: %num%, z: %num%"
+   return location({_locpart::1}, {_locpart::2}, {_locpart::3}, {_world})
+
+function refreshLiveHolo(t: text="refresh"):
+	loop {api::config::holograms::list::*}:
+		loop {api::config::holograms::list::%loop-value%::lines::*}:
+			if amount of {api::config::holograms::list::%loop-value-1%::lines::*} is not loop-index-2 parsed as number:
+				add "%loop-value-2%{" to {_%loop-value-1%lines::*}
+			else:
+				add "%loop-value-2%" to {_%loop-value-1%lines::*}
+		set {api::config::holograms::list::%loop-value%::linesedited} to "%{_%loop-value-1%lines::*}%"
+		replace all colored "{, " with ";" in {api::config::holograms::list::%loop-value%::linesedited}
+		replace all colored "{ and " with ";" in {api::config::holograms::list::%loop-value%::linesedited}
+		set {_owner} to {api::config::holograms::list::%loop-value%::owner} parsed as a offlineplayer
+		set {_n} to loop-value parsed as number
+		variablesCode({_owner}, {_owner}, {api::config::holograms::list::%loop-value%::linesedited}, true, {_n})
+		set {_world} to "%{api::config::holograms::list::%loop-value%::world}%" parsed as world
+		delete holo object "%{api::config::holograms::list::%loop-value%::location}%"
+		create holo object "%colored {api::config::holograms::list::%loop-value%::linesedited}%" with id "%{api::config::holograms::list::%loop-value%::location}%" at block {api::config::holograms::list::%loop-value%::height} above holoTP("%{api::config::holograms::list::%loop-value%::location}%", {_world})# above block at {api::config::holograms::list::%loop-value%::location}
+
+function filesWrite(t: text):
+	if "%{_t}%" = "folder":
+		create dir "plugins/AdvancedPlayerInfo"
+	if "%{_t}%" = "placeholders":
+		set {_ppF::*} to contents from url "https://pastebin.com/raw/Zc3MdZRi"
+		loop {_ppF::*}:
+			if amount of {_ppF::*} != loop-index parsed as number:
+				add "%loop-value%{" to {_pF::*}
+			else if amount of {_ppF::*} = loop-index parsed as number:
+				add "%loop-value%" to {_pF::*}
+		set {_pFFinal} to "%{_pF::*}%"
+		replace all colored "{, " with "%newline%" in {_pFFinal}
+		replace all colored "{ and " with "%newline%" in {_pFFinal}
+		set file contents of "{@pfile}" to "%{_pFFinal}%"
+	if "%{_t}%" = "config":
+		set {_ccF::*} to contents from url "https://pastebin.com/raw/0j6aKYte"
+		loop {_ccF::*}:
+			if amount of {_ccF::*} != loop-index parsed as number:
+				add "%loop-value%{" to {_cF::*}
+			else if amount of {_ccF::*} = loop-index parsed as number:
+				add "%loop-value%" to {_cF::*}
+		set {_cFFinal} to "%{_cF::*}%"
+		replace all colored "{, " with "%newline%" in {_cFFinal}
+		replace all colored "{ and " with "%newline%" in {_cFFinal}
+		set file contents of "{@cfile}" to "%{_cFFinal}%"
+	if "%{_t}%" = "holograms":
+		set {_hhF::*} to contents from url "https://pastebin.com/raw/jkg8rekP"
+		loop {_hhF::*}:
+			if amount of {_hhF::*} != loop-index parsed as number:
+				add "%loop-value%{" to {_hF::*}
+			else if amount of {_hhF::*} = loop-index parsed as number:
+				add "%loop-value%" to {_hF::*}
+		set {_hFFinal} to "%{_hF::*}%"
+		replace all colored "{, " with "%newline%" in {_hFFinal}
+		replace all colored "{ and " with "%newline%" in {_hFFinal}
+		set file contents of "{@hfile}" to "%{_hFFinal}%"
+	if "%{_t}%" = "gui":
+		set {_ggF::*} to contents from url "https://pastebin.com/raw/vM7XDByd"
+		loop {_ggF::*}:
+			if amount of {_ggF::*} != loop-index parsed as number:
+				add "%loop-value%{" to {_gF::*}
+			else if amount of {_ggF::*} = loop-index parsed as number:
+				add "%loop-value%" to {_gF::*}
+		set {_gFFinal} to "%{_gF::*}%"
+		replace all colored "{, " with "%newline%" in {_gFFinal}
+		replace all colored "{ and " with "%newline%" in {_gFFinal}
+		set file contents of "{@gfile}" to "%{_gFFinal}%"
+
+# Update Checker on join v1.3.3
+on join:
+	wait 1 second
+	if player has permission "playerinfo.updatecheck":
+		set {_nv} to text from "https://pastebin.com/raw/sKLVRjFT"
+		set {_ui} to text from url "https://pastebin.com/raw/n3ZmWBn0"
+		if "%{api::config::ver::ver}%" != "%{_nv}%":
+			replace all "$nl" with new line in {_ui}
+			replace all "$p" with "{@console}" in {_ui}
+			replace all "$ov" with "%{api::config::ver::ver}%" in {_ui}
+			replace all "$nv" with "%{_nv}%" in {_ui}
+			send colored "%{_ui}%" to player
+		else:
+			send colored "{@console} &aPlugin is up to date, no new updates." to player
+
+
+
+options:
+	version: 1.4.4
+
+
+on load:
+	send colored "&7&m-----------&a&l&o Advanced Player Info &7[&a&l$&7] &7&m----&r" to console
+	send colored " " to console
+	send colored "{@console} &aRunning on version &c%{api::config::ver::ver}%" to console
+	send colored "{@console} &bThank you for &lPurchasing&b my plugin :D" to console
+	send colored "{@console} &ePlugin made by &aAyham Al-Ali &cYT&7:&a@ayham5131" to console
+	send colored " " to console
+	send colored "&7&m---- &7[&a&l$&7] &a&l&o Advanced Player Info &7&m-----------&r" to console
+	set {_NewVer} to text from "https://pastebin.com/raw/sKLVRjFT"
+	#set {_NewVer} to "1.3.1"
+	set {_UpdateInfo} to text from url "https://pastebin.com/raw/n3ZmWBn0"
+
+	# V1.3 !REMOVED
+	#send colored "{@console} &eChecking for important updates..." to console
+	#if {_NewVer} is "1.3":
+		#if {api::config::ver::ver} != {_NewVer}:
+			#if dir "plugins/AdvancedPlayerInfo/OLDVERSIONS/%{api::config::ver::ver}%" doesn't exist:
+				#create dir "plugins/AdvancedPlayerInfo/OLDVERSIONS/%{api::config::ver::ver}%"
+			#copy file "plugins/AdvancedPlayerInfo/config.yml" to "plugins/AdvancedPlayerInfo/OLDVERSIONS/%{api::config::ver::ver}%"
+			#copy file "plugins/AdvancedPlayerInfo/gui.yml" to "plugins/AdvancedPlayerInfo/OLDVERSIONS/%{api::config::ver::ver}%"
+			#send colored "{@console} &cPlugin has been disabled because a new important update is required." to console
+			#loop all players:
+				#if loop-player has permission "playerinfo.updatecheck":
+					#send colored "{@console} &cPlugin has been disabled because a new important update is required." to loop-player
+			#execute console command "sk disable AdvancedPlayerInfo"
+			#stop
+		#else:
+			#send colored "{@console} &aNo important updates required." to console
+
+	send colored "{@console} &eChecking configuration files..." to console
+	if dir "plugins/AdvancedPlayerInfo" doesn't exist:
+		send colored "{@console} &cFolder &7""plugins/AdvancedPlayerInfo""&c does not exist. &bGenerating a one now..." to console
+		filesWrite("folder")
+		filesWrite("config")
+		filesWrite("gui")
+		filesWrite("placeholders")
+		filesWrite("holograms")
+		configReload("ReloadCon")
+		configReload("ReloadGui")
+		configReload("ReloadPlaceholders")
+		configReload("ReloadHolo")
+	else if dir "plugins/AdvancedPlayerInfo" exists:
+		send colored "{@console} &aFolder &7""plugins/AdvancedPlayerInfo""&a exists." to console
+
+		if file "{@cfile}" exists:
+			send colored "{@console} &aFile &7""{@cfile}""&a exists." to console
+			configReload("ReloadCon")
+		else:
+			send colored "{@console} &aFile &7""{@cfile}""&a does not exists. &bGenerating a one now..." to console
+			filesWrite("config")
+			configReload("ReloadCon")
+
+		if file "{@gfile}" exists:
+			send colored "{@console} &aFile &7""{@gfile}""&a exists." to console
+			configReload("ReloadGui")
+		else:
+			send colored "{@console} &cFile &7""{@gfile}""&c does not exist. &bGenerating a one now..." to console
+			filesWrite("gui")
+			configReload("ReloadGui")
+
+		if file "{@pfile}" exists:
+			send colored "{@console} &aFile &7""{@pfile}""&a exists." to console
+			configReload("ReloadPlaceholders")
+		else:
+			send colored "{@console} &cFile &7""{@pfile}""&c does not exist. &bGenerating a one now..." to console
+			filesWrite("placeholders")
+			configReload("ReloadPlaceholders")
+
+		if file "{@hfile}" exists:
+			send colored "{@console} &aFile &7""{@hfile}""&a exists." to console
+			configReload("ReloadHolo")
+		else:
+			send colored "{@console} &cFile &7""{@hfile}""&c does not exist. &bGenerating a one now..." to console
+			filesWrite("holograms")
+			configReload("ReloadHolo")
+
+	# Auto version updater V1.3.1
+	if "%{_NewVer}%" = "{@version}":
+		if "%{api::config::ver::ver}%" != "{@version}":
+			set skutil yml value "version" of file "{@cfile}" to "{@version}"
+			send "{@console} &aPlugin version has been automatically changed to &f{@version}" to console
+
+
+	send colored "{@console} &eChecking for updates..." to console
+
+	replace all "$nl" with new line in {_UpdateInfo}
+	replace all "$p" with "{@console}" in {_UpdateInfo}
+	replace all "$ov" with "%{api::config::ver::ver}%" in {_UpdateInfo}
+	replace all "$nv" with "%{_NewVer}%" in {_UpdateInfo}
+
+	if "%{api::config::ver::ver}%" != "%{_NewVer}%":
+		send colored "%newline%%newline%%{_UpdateInfo}%%newline%%newline%" to console
+	else if "%{_NewVer}%" = "%{api::config::ver::ver}%":
+		send colored "{@console} &aPlugin is up to date, no new updates." to console
+
+	loop all players:
+		if loop-player has permission "playerinfo.updatecheck":
+			if "%{_NewVer}%" != "%{api::config::ver::ver}%":
+				send colored "%{_UpdateInfo}%" to loop-player
+			else if "%{_NewVer}%" = "%{api::config::ver::ver}%":
+				send colored "%{api::config::msg::prefix}%&a Plugin is up to date, no new updates." to loop-player
+	wait a tick
+	send colored "{@console} &ahas been loaded successfully." to console
+
+on unload:
+	send colored "{@console} &chas been unloaded successfully." to console
+
+
+
+
+
+
+
+
+
+# --------------
+
+
+command /playerinfo [<text=help>] [<text>] [<text>]:
+	permission: playerinfo.cmd.main
+	permission message: "%{api::config::msg::noperm}%"
+	description: &aGet advanced info of any player with GUI and more.
+	aliases: pi, playeri, pinfo
+	trigger:
+		if arg-1 is "*preload": # Developer command :), you don't need to use it.
+			if sender is op or console:
+				make sender execute "sk reload AdvancedPlayerInfo"
+				send colored "%{api::config::msg::prefix}% &aReloaded." to sender
+				stop
+			else:
+				send colored "%{api::config::msg::prefix}% &cThis is a developers command :)"
+				stop
+		if arg-1 is "reset": # v1.3.5
+			if player has permission "playerinfo.cmd.reset":
+				if arg-2 is not "all":
+					clear {api::data::%uuid of arg-2 parsed as offlineplayer%::*}
+					send colored "%{api::config::msg::prefix}% &f%arg-2%&a's data has been reseted."
+					stop
+				if arg-2 is "all":
+					clear {api::data::*}
+					send colored "%{api::config::msg::prefix}% &aeveryone's data has been reseted."
+					stop
+				if arg-2 is not set:
+					send "%{api::config::msg::prefix}% &cCorrect usage: &f/pi reset <player/all>"
+					stop
+			else:
+				send "%{api::config::msg::noperm}%"
+				stop
+		if arg-1 is "check": # v1.3.3
+			if player has permission "playerinfo.cmd.check":
+				set {_nv} to text from "https://pastebin.com/raw/sKLVRjFT"
+				set {_ui} to text from url "https://pastebin.com/raw/n3ZmWBn0"
+				configReload("ReloadCon")
+				if "%{api::config::ver::ver}%" != "%{_nv}%":
+					replace all "$nl" with new line in {_ui}
+					replace all "$p" with "{@console}" in {_ui}
+					replace all "$ov" with "%{api::config::ver::ver}%" in {_ui}
+					replace all "$nv" with "%{_nv}%" in {_ui}
+					send colored "%{_ui}%" to player
+					stop
+				else:
+					send colored "{@console} &aPlugin is up to date, no new updates." to player
+					stop
+			else:
+				send "%{api::config::msg::noperm}%"
+				stop
+		if arg-1 is "reload":
+			if player has permission "playerinfo.cmd.reload":
+				configReload("ReloadCon")
+				configReload("ReloadGui")
+				configReload("ReloadHolo")
+				configReload("ReloadPlaceholders")
+				replace all "[p]" with "%{api::config::msg::prefix}%" in {api::config::msg::reload}
+				replace all "[nl]" with "%newline%" in {api::config::msg::reload}
+				send colored "%{api::config::msg::reload}%"
+				stop
+			else:
+				send "%{api::config::msg::noperm}%"
+				stop
+		if arg-1 is "permission" or "permissions": # v1.4
+			send colored ""
+			send colored "&a               &lPlayerInfo &7- &a&lPermissions"
+			send colored ""
+			send colored "  &aplayerinfo.exempt &8- &7Others can't see your info"
+			send colored "  &aplayerinfo.exempt.bypass &8- &7Bypass exempted players"
+			send colored "  &aplayerinfo.updatecheck &8- &7get update checks"
+			#send colored " "
+			send colored "  &aplayerinfo.cmd.main &8- &7Use '/playerinfo'"
+			send colored "  &aplayerinfo.cmd.reload &8- &7Use '/pi reload'"
+			send colored "  &aplayerinfo.cmd.check &8- &7Use '/pi check'"
+			send colored "  &aplayerinfo.cmd.version &8- &7Use '/pi version'"
+			send colored "  &aplayerinfo.cmd.reset &8- &7Use '/pi reset <player/all>'"
+			send colored "  &aplayerinfo.cmd.gui &8- &7Use '/pi <player>'"
+			send colored "  &aplayerinfo.hologram.move &8- &7Move holo & use '/pi holo up/down'"
+			send colored "  &aplayerinfo.hologram.get &8- &7Use '/pi head [player]'"
+			send colored "  &aplayerinfo.hologram.place &8- &7Place holo blocks"
+			send colored "  &aplayerinfo.hologram.break &8- &7Break holo blocks"
+			send colored "  &aplayerinfo.hologram.list &8- &7Use '/pi holo list'"
+			send colored "  &aplayerinfo.hologram.lines &8- &7Use '/pi holo lines'"
+			send colored "  &aplayerinfo.hologram.addline &8- &7Use '/pi holo addline'"
+			send colored "  &aplayerinfo.hologram.removeline &8- &7Use '/pi holo removeline'"
+			send colored "  &aplayerinfo.hologram.setline &8- &7Use '/pi holo setline'"
+			send colored ""
+			stop
+		if arg-1 is "help":
+			set {_wl} to text from "https://pastebin.com/raw/LY97K3EC"
+			send colored ""
+			send colored "&a                  &lPlayerInfo &7- &a&lHelp"
+			send colored ""
+			send colored "  &a/playerinfo &ehelp &8- &7Show this message."
+			send colored "  &a/playerinfo &e<player> &8- &7Show <player>'s advanced info in GUI."
+			send colored "  &a/playerinfo &eversion &8- &7Show plugin's version."
+			send colored "  &a/playerinfo &epermissions &8- &7Show plugin's permissions."
+			send colored "  &a/playerinfo &ereload &8- &7Reload all the config files."
+			send colored "  &a/playerinfo &echeck &8- &7Check for updates."
+			send colored "  &a/playerinfo &ereset <player/all> &8- &7Reset player's local data."
+			send colored "  &a/playerinfo &ehead [player] &8- &7Get a holo block of <player>."
+			send colored "  &a/playerinfo &eholo up|moveup &8- &7Move a live holo block up."
+			send colored "  &a/playerinfo &eholo down|movedown &8- &7Move a live holo block down."
+			send colored "  &a/playerinfo &eholo list &8- &7List all the created live holograms."
+			send colored "  &a/playerinfo &eholo lines &8- &7Get the number of live holo lines."
+			send colored "  &a/playerinfo &eholo addline/removeline/setline &8- &7Add/Remove/Set a live holo line."
+			send colored ""
+			send colored "     &c<> = required&7, &b[] = optional&7, &e| = shortcut&7, &a/ = or"
+			send colored ""
+			#send colored "%{api::config::msg::prefix}% &7Plugin Page&7» &b%{_wl}%"
+			stop
+		if arg-1 is "version":
+			if player has permission "playerinfo.cmd.version":
+				send colored "%{api::config::msg::prefix}% &7Running &aAdvacnedPlayerInfo &7on version: &a&l%{api::config::ver::ver}%"
+				set {_nv} to text from "https://pastebin.com/raw/sKLVRjFT"
+				set {_ui} to text from url "https://pastebin.com/raw/n3ZmWBn0"
+				configReload("ReloadCon")
+				if "%{api::config::ver::ver}%" != "%{_nv}%":
+					replace all "$nl" with new line in {_ui}
+					replace all "$p" with "{@console}" in {_ui}
+					replace all "$ov" with "%{api::config::ver::ver}%" in {_ui}
+					replace all "$nv" with "%{_nv}%" in {_ui}
+					send colored "%{_ui}%" to player
+					stop
+				else:
+					send colored "{@console} &aPlugin is up to date, no new updates." to player
+					stop
+			else:
+				send "%{api::config::msg::noperm}%"
+				stop
+		if arg-1 is "holo" or "hologram":
+			if arg-2 is "down" or "movedown":
+				if player has permission "playerinfo.hologram.move":
+					loop {api::config::holograms::list::*}:
+						add {api::config::holograms::list::%loop-value%::location} to {_locs::*}
+					if "%{_locs::*}%" contains "%location of targeted block%":
+						loop {api::config::holograms::list::*}:
+							if "%{api::config::holograms::list::%loop-value%::location}%" = "%location of targeted block%":
+								loop {api::config::holograms::list::%loop-value%::lines::*}:
+									if amount of {api::config::holograms::list::%loop-value-1%::lines::*} != loop-index-2 parsed as number:
+										add "%loop-value-2%{" to {_%loop-value-1%lines::*}
+									else:
+										add "%loop-value-2%" to {_%loop-value-1%lines::*}
+								set {api::config::holograms::list::%loop-value%::linesedited} to "%{_%loop-value%lines::*}%"
+								set {_owner} to {api::config::holograms::list::%loop-value%::owner} parsed as offlineplayer
+								replace all colored "{, " with ";" in {api::config::holograms::list::%loop-value%::linesedited}
+								replace all colored "{ and " with ";" in {api::config::holograms::list::%loop-value%::linesedited}
+								set {_n} to loop-value parsed as number
+								variablesCode({_owner}, {_owner}, {api::config::holograms::list::%loop-value%::linesedited}, true, {_n})
+								if {api::config::holograms::list::%loop-value%::height} is smaller than or equal to 1:
+									send colored "%{api::config::msg::prefix}% &cHologram's height is lower than 1 and that might break the hologram."
+									send colored "%{api::config::msg::prefix}% &cYou can't move it down."
+									stop
+								else:
+									delete holo object "%location of targeted block%"
+									create holo object colored "%{api::config::holograms::list::%loop-value%::linesedited}%" with id "%location of targeted block%" at location of block ({api::config::holograms::list::%loop-value%::height} - 1) above targeted block
+									set yml value "holograms.%loop-value%.height" of file "{@hfile}" to "%{api::config::holograms::list::%loop-value%::height} - 1%"
+									configReload("ReloadHolo")
+									set {_msg} to {api::config::msg::moveholodown}
+									replace all "[p]" with "%{api::config::msg::prefix}%" in {_msg}
+									replace all "[owner]" with "%{api::config::holograms::list::%loop-value%::owner}%" in {_msg}
+									send colored "%{_msg}%"
+								stop
+					else:
+						send colored "%{api::config::msg::prefix}% &cYou must look at a live holo block to do that."
+						stop
+				else:
+					send "%{api::config::msg::noperm}%"
+					stop
+			if arg-2 is "lines":
+				if player has permission "playerinfo.hologram.lines":
+					loop {api::config::holograms::list::*}:
+						add {api::config::holograms::list::%loop-value%::location} to {_locs::*}
+					if "%{_locs::*}%" contains "%location of targeted block%":
+						loop {api::config::holograms::list::*}:
+							if "%{api::config::holograms::list::%loop-value%::location}%" = "%location of targeted block%":
+								#loop {api::config::holograms::list::%loop-value%::lines::*}:
+								send colored "%{api::config::msg::prefix}% &aTargeted live holo block has &f%amount of {api::config::holograms::list::%loop-value%::lines::*}% &alines."
+								stop
+					else:
+						send colored "%{api::config::msg::prefix}% &cYou must look at a live holo block to do that."
+						stop
+				else:
+					send "%{api::config::msg::noperm}%"
+					stop
+			if arg-2 is "removeline":
+				if arg-3 is set:
+					if player has permission "playerinfo.hologram.removeline":
+						loop {api::config::holograms::list::*}:
+							add {api::config::holograms::list::%loop-value%::location} to {_locs::*}
+						if "%{_locs::*}%" contains "%location of targeted block%":
+							loop {api::config::holograms::list::*}:
+								if "%{api::config::holograms::list::%loop-value%::location}%" = "%location of targeted block%":
+									#loop {api::config::holograms::list::%loop-value%::lines::*}:
+									#loop {api::config::holograms::list::%loop-value%::lines::*}:
+									if {api::config::holograms::list::%loop-value%::lines::%arg-3%} is set:
+										#set {_line} to {api::config::holograms::list::%loop-value%::lines::%arg-3%}
+										remove {api::config::holograms::list::%loop-value%::lines::%arg-3%} from skutil yml list "holograms.%loop-value%.lines" of file "{@hfile}"
+										send colored "%{api::config::msg::prefix}% &aRemoved line &f%arg-3% &afrom the targeted live holo block."
+										configReload("ReloadHolo")
+										stop
+									else:
+										send colored "%{api::config::msg::prefix}% &cCould not find that line."
+										stop
+						else:
+							send colored "%{api::config::msg::prefix}% &cYou must look at a live holo block to do that."
+							stop
+					else:
+						send "%{api::config::msg::noperm}%"
+						stop
+				else:
+					send "%{api::config::msg::prefix}% &cMissing line number."
+					stop
+			if arg-2 is "addline":
+				if player has permission "playerinfo.hologram.addline":
+					loop {api::config::holograms::list::*}:
+						add {api::config::holograms::list::%loop-value%::location} to {_locs::*}
+					if "%{_locs::*}%" contains "%location of targeted block%":
+						loop {api::config::holograms::list::*}:
+							if "%{api::config::holograms::list::%loop-value%::location}%" = "%location of targeted block%":
+								#loop {api::config::holograms::list::%loop-value%::lines::*}:
+								set {api::specialdata::addingline::%uuid of player%::waiting} to true
+								set {api::specialdata::addingline::%uuid of player%::hololoc} to location of targeted block
+								send colored "%{api::config::msg::prefix}% &aType in chat the line that you want to add."
+								send colored "%{api::config::msg::prefix}% &aor type &f'cancel'&a to cancel the operation."
+								stop
+					else:
+						send colored "%{api::config::msg::prefix}% &cYou must look at a live holo block to do that."
+						stop
+				else:
+					send "%{api::config::msg::noperm}%"
+					stop
+			if arg-2 is "setline":
+				if arg-3 is set:
+					if player has permission "playerinfo.hologram.setline":
+						loop {api::config::holograms::list::*}:
+							add {api::config::holograms::list::%loop-value%::location} to {_locs::*}
+						if "%{_locs::*}%" contains "%location of targeted block%":
+							loop {api::config::holograms::list::*}:
+								if "%{api::config::holograms::list::%loop-value%::location}%" = "%location of targeted block%":
+									#loop {api::config::holograms::list::%loop-value%::lines::*}:
+									loop {api::config::holograms::list::%loop-value%::lines::*}:
+										if {api::config::holograms::list::%loop-value-1%::lines::%arg-3%} is set:
+											set {api::specialdata::settingline::%uuid of player%::waiting} to true
+											set {api::specialdata::settingline::%uuid of player%::hololoc} to location of targeted block
+											set {api::specialdata::settingline::%uuid of player%::line} to arg-3
+											set {api::specialdata::settingline::%uuid of player%::holoid} to loop-value-1
+											send colored "%{api::config::msg::prefix}% &aType in chat the new text of line &f%arg-3%&a."
+											send colored "%{api::config::msg::prefix}% &aor type &f'cancel'&a to cancel the operation."
+											stop
+										else:
+											send colored "%{api::config::msg::prefix}% &cCould not find that line."
+											stop
+						else:
+							send colored "%{api::config::msg::prefix}% &cYou must look at a live holo block to do that."
+							stop
+					else:
+						send "%{api::config::msg::noperm}%"
+						stop
+			if arg-2 is "up" or "moveup":
+				if player has permission "playerinfo.hologram.move":
+					loop {api::config::holograms::list::*}:
+						add {api::config::holograms::list::%loop-value%::location} to {_locs::*}
+					if "%{_locs::*}%" contains "%location of targeted block%":
+						loop {api::config::holograms::list::*}:
+							if "%{api::config::holograms::list::%loop-value%::location}%" = "%location of targeted block%":
+								loop {api::config::holograms::list::%loop-value%::lines::*}:
+									if amount of {api::config::holograms::list::%loop-value-1%::lines::*} != loop-index-2 parsed as number:
+										add "%loop-value-2%{" to {_%loop-value-1%lines::*}
+									else:
+										add "%loop-value-2%" to {_%loop-value-1%lines::*}
+								set {api::config::holograms::list::%loop-value%::linesedited} to "%{_%loop-value%lines::*}%"
+								set {_owner} to {api::config::holograms::list::%loop-value%::owner} parsed as a offlineplayer
+								replace all colored "{, " with ";" in {api::config::holograms::list::%loop-value%::linesedited}
+								replace all colored "{ and " with ";" in {api::config::holograms::list::%loop-value%::linesedited}
+								set {_n} to loop-value parsed as number
+								variablesCode({_owner}, {_owner}, {api::config::holograms::list::%loop-value%::linesedited}, true, {_n})
+								delete holo object "%location of targeted block%"
+								create holo object colored "%{api::config::holograms::list::%loop-value%::linesedited}%" with id "%location of targeted block%" at location of block ({api::config::holograms::list::%loop-value%::height} + 1) above targeted block
+								set yml value "holograms.%loop-value%.height" of file "{@hfile}" to "%{api::config::holograms::list::%loop-value%::height} + 1%"
+								configReload("ReloadHolo")
+								set {_msg} to {api::config::msg::moveholoup}
+								replace all "[p]" with "%{api::config::msg::prefix}%" in {_msg}
+								replace all "[owner]" with "%{api::config::holograms::list::%loop-value%::owner}%" in {_msg}
+								send colored "%{_msg}%"
+								stop
+					else:
+						send colored "%{api::config::msg::prefix}% &cYou must look at a live holo block to do that."
+						stop
+				else:
+					send "%{api::config::msg::noperm}%"
+					stop
+			if arg-2 is "list":
+				if player has permission "playerinfo.hologram.list":
+					if {api::config::holograms::list::*} is set:
+						send colored "%{api::config::msg::prefix}% &aShowing list of created live info holograms.."
+						loop {api::config::holograms::list::*}:
+							set {_loc} to skutil yml value "holograms.%loop-value%.location" of file "{@hfile}"
+							set {_owner} to skutil yml value "holograms.%loop-value%.owner" of file "{@hfile}"
+							set {_world} to skutil yml value "holograms.%loop-value%.world" of file "{@hfile}"
+							set {_msg} to {api::config::msg::hologramslist}
+							replace all "[loc]" with "%{_loc}%" in {_msg}
+							replace all "[owner]" with "%{_owner}%" in {_msg}
+							replace all "[world]" with "%{_world}%" in {_msg}
+							replace all "[p]" with "%{api::config::msg::prefix}%" in {_msg}
+							json("%player%", "%{_msg}%||ttp:&aClick to teleport%newline%&7Location: &a%{_loc}%||cmd:/pi holotp %{_world}% %{_loc}%")
+						stop
+					else:
+						send colored "%{api::config::msg::prefix}% &cThere is no live holograms to list."
+						stop
+				else:
+					send "%{api::config::msg::noperm}%"
+					stop
+			else:
+				send colored "%{api::config::msg::prefix}% &cError. No such argument."
+				stop
+		if arg-1 is "holotp":
+			if arg-2 is set:
+				if arg-3 is set:
+					set {_world} to arg-2 parsed as world
+					teleport player to block 2 above block at holoTP("%arg-3%", {_world})
+					send colored "%{api::config::msg::prefix}% &aTeleport to hologram at &f%arg-3% &aat world &f%arg-2%"
+					stop
+				else:
+					send colored "%{api::config::msg::prefix}% &cMissing location."
+					stop
+			else:
+				send colored "%{api::config::msg::prefix}% &cMissing world name."
+				stop
+		if arg-1 is "head":
+			if player has permission "playerinfo.hologram.get":
+				if arg-2 is set:
+					set {_p} to arg-2 parsed as offlineplayer
+					give player {_p}'s skull named colored "%{api::config::holograms::settings::itemname}%" with lore "&8&m-----------||&ePlace down somewhere to spawn||&ea live info of block's owner||&eBlock's owner: &a%arg-2%||&8&m-----------"
+					send colored "%{api::config::msg::prefix}% &aYou've been given &f%arg-2%&a's head."
+					stop
+				else if arg-2 is not set:
+					give player player's skull named colored "%{api::config::holograms::settings::itemname}%" with lore "&8&m-----------||&ePlace down somewhere to spawn||&ea live info of block's owner||&eBlock's owner: &a%player%||&8&m-----------"
+					send colored "%{api::config::msg::prefix}% &aYou've been given &f%player%&a's head."
+					stop
+			else:
+				send "%{api::config::msg::noperm}%"
+				stop
+		else if arg-1 is not "help" or "version" or "reload" or "*preload" or "check" or "reset" or "head" or "holo" or "hologram" or "holotp":
+			if player has permission "playerinfo.cmd.gui":
+				set {_arg1} to arg-1 parsed as a player
+				if {_arg1} is online:
+					if {_arg1} has permission "playerinfo.exempt":
+						if player has permission "playerinfo.exempt.bypass":
+							openGUI(player, {_arg1})
+							stop
+						else if player doesn't have permission "playerinfo.exempt.bypass":
+							replace all "[p]" with "%{api::config::msg::prefix}%" in {api::config::msg::exempt}
+							replace all "[nl]" with "%newline%" in {api::config::msg::exempt}
+							send colored "%{api::config::msg::exempt}%"
+							stop
+					else if {_arg1} doesn't have permission "playerinfo.exempt":
+						openGUI(player, {_arg1})
+						stop
+				else:
+					set {_m2} to {api::config::msg::playerisoffline}
+					replace all "[P]" with "%{api::config::msg::prefix}%" in {_m2}
+					replace all "[player]" with "%arg-1%" in {_m2}
+					replace all "[rc]" with "%randomColorPI(""random"")%" in {_m2}
+					send colored "%{_m2}%"
+					stop
+			else:
+				send "%{api::config::msg::noperm}%"
+				stop
+
+
+on quit:
+	if {api::specialdata::addingline::%uuid of player%::waiting} is true:
+		clear {api::specialdata::addingline::%uuid of player%::waiting}
+		clear {api::specialdata::addingline::%uuid of player%::hololoc}
+	if {api::specialdata::settingline::%uuid of player%::waiting} is true:
+		clear {api::specialdata::settingline::%uuid of player%::waiting}
+		clear {api::specialdata::settingline::%uuid of player%::hololoc}
+		clear {api::specialdata::settingline::%uuid of player%::line}
+		clear {api::specialdata::settingline::%uuid of player%::holoid}
+on chat:
+	if {api::specialdata::settingline::%uuid of player%::waiting} is true:
+		cancel event
+		if message is "cancel":
+			clear {api::specialdata::settingline::%uuid of player%::waiting}
+			clear {api::specialdata::settingline::%uuid of player%::hololoc}
+			clear {api::specialdata::settingline::%uuid of player%::line}
+			clear {api::specialdata::settingline::%uuid of player%::holoid}
+			send "%{api::config::msg::prefix}% &aCanceled the operation."
+		else:
+			set {_linenumber} to {api::specialdata::settingline::%uuid of player%::line}
+			set {_id} to {api::specialdata::settingline::%uuid of player%::holoid}
+			loop {api::config::holograms::list::%{_id}%::lines::*}:
+				add loop-value to {_newlines::*}
+			set {_newlines::%{_linenumber}%} to message
+			delete yml list "holograms.%{_id}%.lines" of file "{@hfile}"
+			loop {_newlines::*}:
+				add loop-value to yml list "holograms.%{_id}%.lines" of file "{@hfile}"
+			send "%{api::config::msg::prefix}% &aLine &f%{api::specialdata::settingline::%uuid of player%::line}% &ahas been edited successfully."
+			clear {api::specialdata::settingline::%uuid of player%::waiting}
+			clear {api::specialdata::settingline::%uuid of player%::hololoc}
+			clear {api::specialdata::settingline::%uuid of player%::line}
+			clear {api::specialdata::settingline::%uuid of player%::holoid}
+			configReload("ReloadHolo")
+
+
+	if {api::specialdata::addingline::%uuid of player%::waiting} is true:
+		cancel event
+		if message is "cancel":
+			clear {api::specialdata::addingline::%uuid of player%::waiting}
+			clear {api::specialdata::addingline::%uuid of player%::hololoc}
+			send "%{api::config::msg::prefix}% &aCanceled the operation."
+		else:
+			loop {api::config::holograms::list::*}:
+				if "%{api::config::holograms::list::%loop-value%::location}%" = "%{api::specialdata::addingline::%uuid of player%::hololoc}%":
+					add message to skutil yml list "holograms.%loop-value%.lines" of file "{@hfile}"
+					send "%{api::config::msg::prefix}% &aAdded the message to the live holo block."
+					clear {api::specialdata::addingline::%uuid of player%::waiting}
+					clear {api::specialdata::addingline::%uuid of player%::hololoc}
+					configReload("ReloadHolo")
+
+
+
+on right click:
+	if player has permission "playerinfo.hologram.move":
+		if player is not sneaking:
+			loop {api::config::holograms::list::*}:
+				add {api::config::holograms::list::%loop-value%::location} to {_locs::*}
+			if "%{_locs::*}%" contains "%location of targeted block%":
+				loop {api::config::holograms::list::*}:
+					if "%{api::config::holograms::list::%loop-value%::location}%" = "%location of targeted block%":
+						cancel event
+						loop {api::config::holograms::list::%loop-value%::lines::*}:
+							if amount of {api::config::holograms::list::%loop-value-1%::lines::*} != loop-index-2 parsed as number:
+								add "%loop-value-2%{" to {_%loop-value-1%lines::*}
+							else:
+								add "%loop-value-2%" to {_%loop-value-1%lines::*}
+						set {api::config::holograms::list::%loop-value%::linesedited} to "%{_%loop-value%lines::*}%"
+						set {_owner} to {api::config::holograms::list::%loop-value%::owner} parsed as a offlineplayer
+						replace all colored "{, " with ";" in {api::config::holograms::list::%loop-value%::linesedited}
+						replace all colored "{ and " with ";" in {api::config::holograms::list::%loop-value%::linesedited}
+						set {_n} to loop-value parsed as number
+						variablesCode({_owner}, {_owner}, {api::config::holograms::list::%loop-value%::linesedited}, true, {_n})
+						delete holo object "%location of targeted block%"
+						create holo object colored "%{api::config::holograms::list::%loop-value%::linesedited}%" with id "%location of targeted block%" at location of block ({api::config::holograms::list::%loop-value%::height} + 1) above targeted block
+						set yml value "holograms.%loop-value%.height" of file "{@hfile}" to "%{api::config::holograms::list::%loop-value%::height} + 1%"
+						configReload("ReloadHolo")
+						set {_msg} to {api::config::msg::moveholoup}
+						replace all "[p]" with "%{api::config::msg::prefix}%" in {_msg}
+						replace all "[owner]" with "%{api::config::holograms::list::%loop-value%::owner}%" in {_msg}
+						send colored "%{_msg}%"
+						stop
+	else:
+		send "%{api::config::msg::noperm}%"
+		stop
+on left click:
+	if player has permission "playerinfo.hologram.move":
+		if player is not sneaking:
+			loop {api::config::holograms::list::*}:
+				add {api::config::holograms::list::%loop-value%::location} to {_locs::*}
+			if "%{_locs::*}%" contains "%location of targeted block%":
+				loop {api::config::holograms::list::*}:
+					if "%{api::config::holograms::list::%loop-value%::location}%" = "%location of targeted block%":
+						cancel event
+						loop {api::config::holograms::list::%loop-value%::lines::*}:
+							if amount of {api::config::holograms::list::%loop-value-1%::lines::*} != loop-index-2 parsed as number:
+								add "%loop-value-2%{" to {_%loop-value-1%lines::*}
+							else:
+								add "%loop-value-2%" to {_%loop-value-1%lines::*}
+						set {api::config::holograms::list::%loop-value%::linesedited} to "%{_%loop-value%lines::*}%"
+						set {_owner} to {api::config::holograms::list::%loop-value%::owner} parsed as offlineplayer
+						replace all colored "{, " with ";" in {api::config::holograms::list::%loop-value%::linesedited}
+						replace all colored "{ and " with ";" in {api::config::holograms::list::%loop-value%::linesedited}
+						set {_n} to loop-value parsed as number
+						variablesCode({_owner}, {_owner}, {api::config::holograms::list::%loop-value%::linesedited}, true, {_n})
+						if {api::config::holograms::list::%loop-value%::height} is smaller than or equal to 1:
+							send colored "%{api::config::msg::prefix}% &cHologram's height is lower than 1 and that might break the hologram."
+							send colored "%{api::config::msg::prefix}% &cYou can't move it down."
+							stop
+						else:
+							delete holo object "%location of targeted block%"
+							create holo object colored "%{api::config::holograms::list::%loop-value%::linesedited}%" with id "%location of targeted block%" at location of block ({api::config::holograms::list::%loop-value%::height} - 1) above targeted block
+							set yml value "holograms.%loop-value%.height" of file "{@hfile}" to "%{api::config::holograms::list::%loop-value%::height} - 1%"
+							configReload("ReloadHolo")
+							set {_msg} to {api::config::msg::moveholodown}
+							replace all "[p]" with "%{api::config::msg::prefix}%" in {_msg}
+							replace all "[owner]" with "%{api::config::holograms::list::%loop-value%::owner}%" in {_msg}
+							send colored "%{_msg}%"
+						stop
+	else:
+		send "%{api::config::msg::noperm}%"
+		stop
+
+
+on place:
+	if name of player's tool is colored "%{api::config::holograms::settings::itemname}%":
+		if player has permission "playerinfo.hologram.place":
+			set {_owner} to uncolored 4th line of lore of player's tool
+			replace all "Block's owner: " with "" in {_owner}
+			set {_owner} to {_owner} parsed as offlineplayer
+			set {_ownerU} to uuid of {_owner}
+
+			if skutil yml nodes "holograms" of file "{@hfile}" exists:
+				configReload("ReloadHolo")
+				wait a tick
+				set {_n} to amount of {api::config::holograms::list::*} + 1
+				set skutil yml value "holograms.%{_n}%.location" of file "{@hfile}" to "%location of event-block%"
+				set skutil yml value "holograms.%{_n}%.world" of file "{@hfile}" to "%player's world%"
+				set skutil yml value "holograms.%{_n}%.height" of file "{@hfile}" to "%{api::config::holograms::settings::defaultheight}%"
+				set skutil yml value "holograms.%{_n}%.owner" of file "{@hfile}" to "%{_owner}%"
+				set skutil yml value "holograms.%{_n}%.owneruuid" of file "{@hfile}" to "%{_ownerU}%"
+
+				add "&aName> &e&l[player-name]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aDisplayname> &e&l[player-displayname]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				#add "&aIP> &c&l[player-ip]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aLoc> &e&l[player-location]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aLast Cmd> &e&l[player-lastcmd-cmd]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aHealth> &e&l[player-health]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aFood> &e&l[player-food]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aOnline time> &e&l[player-onlinetime]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aXP> &e&l[player-xp]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aPing> &e&l[player-ping]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aChat count> &e&l[player-chatcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aCmd count> &e&l[player-cmdcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aJoin count> &e&l[player-joincount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aQuit count> &e&l[player-quitcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aPickup count> &e&l[player-pickupcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aDrop count> &e&l[player-dropcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aSprint count> &e&l[player-sprintcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aSneak count> &e&l[player-sneakcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aCraft count> &e&l[player-craftcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aMobkill count> &e&l[player-mobkillcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aMoney> &e&l[player-money]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aPotions> &e&l[player-potions]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				configReload("ReloadHolo")
+			else if skutil yml nodes "holograms" of file "{@hfile}" doesn't exist:
+				set {_n} to 1
+				set skutil yml value "holograms.%{_n}%.location" of file "{@hfile}" to "%location of event-block%"
+				set skutil yml value "holograms.%{_n}%.world" of file "{@hfile}" to "%player's world%"
+				set skutil yml value "holograms.%{_n}%.height" of file "{@hfile}" to "%{api::config::holograms::settings::defaultheight}%"
+				set skutil yml value "holograms.%{_n}%.owner" of file "{@hfile}" to "%{_owner}%"
+				set skutil yml value "holograms.%{_n}%.owneruuid" of file "{@hfile}" to "%{_ownerU}%"
+
+				add "&aName> &e&l[player-name]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aDisplayname> &e&l[player-displayname]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				#add "&aIP> &c&l[player-ip]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aLoc> &e&l[player-location]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aLast Cmd> &e&l[player-lastcmd-cmd]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aHealth> &e&l[player-health]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aFood> &e&l[player-food]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aOnline time> &e&l[player-onlinetime]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aXP> &e&l[player-xp]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aPing> &e&l[player-ping]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aChat count> &e&l[player-chatcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aCmd count> &e&l[player-cmdcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aJoin count> &e&l[player-joincount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aQuit count> &e&l[player-quitcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aPickup count> &e&l[player-pickupcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aDrop count> &e&l[player-dropcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aSprint count> &e&l[player-sprintcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aSneak count> &e&l[player-sneakcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aCraft count> &e&l[player-craftcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aMobkill count> &e&l[player-mobkillcount]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aMoney> &e&l[player-money]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				add "&aPotions> &e&l[player-potions]" to skutil yml list "holograms.%{_n}%.lines" of file "{@hfile}"
+				configReload("ReloadHolo")
+
+			loop {api::config::holograms::list::%{_n}%::lines::*}:
+				if amount of {api::config::holograms::list::%{_n}%::lines::*} != loop-index parsed as number:
+					add "%loop-value%{" to {_%{_n}%lines::*}
+				else:
+					add "%loop-value%" to {_%{_n}%lines::*}
+			set {api::config::holograms::list::%{_n}%::linesedited} to "%{_%{_n}%lines::*}%"
+			replace all colored "{, " with ";" in {api::config::holograms::list::%{_n}%::linesedited}
+			replace all colored "{ and " with ";" in {api::config::holograms::list::%{_n}%::linesedited}
+			variablesCode({_owner}, {_owner}, {api::config::holograms::list::%{_n}%::linesedited}, true, {_n})
+
+			create holo object colored "%{api::config::holograms::list::%{_n}%::linesedited}%" with id "%location of event-block%" at location of block {api::config::holograms::list::%{_n}%::height} above event-block
+			stop
+		else:
+			send "%{api::config::msg::noperm}%"
+			stop
+
+on break:
+	if event-block is head:
+		if player is sneaking:
+			loop {api::config::holograms::list::*}:
+				add "%{api::config::holograms::list::%loop-value%::location}%" to {_locs::*}
+				if "%{_locs::*}%" contains "%location of event-block%":
+					if player has permission "playerinfo.hologram.break":
+						delete holo object "%location of event-block%"
+						set {_msg} to {api::config::msg::holodelete}
+						replace all "[p]" with "%{api::config::msg::prefix}%" in {_msg}
+						replace all "[owner]" with "%{api::config::holograms::list::%loop-value%::owner}%" in {_msg}
+						send colored "%{_msg}%" to player
+						clear {api::config::holograms::list::%loop-value%::*}
+						if skutil yml nodes with keys "holograms" of file "{@hfile}" exists:
+							delete skutil yml nodes with keys "holograms.%loop-value%" of file "{@hfile}"
+						else:
+							clear {api::config::holograms::list::*}
+							stop loop
+						stop loop
+					else:
+						send "%{api::config::msg::noperm}%"
+						stop
+			configReload("ReloadHolo")
+			stop
+
+every 1 second:
+	add 1 to {api::specialdata::refreshtime}
+	if {api::config::msg::hologramsrefresh} = {api::specialdata::refreshtime}:
+		refreshLiveHolo()
+		clear {api::specialdata::refreshtime}
+	else if {api::config::msg::hologramsrefresh} < {api::specialdata::refreshtime}:
+		clear {api::specialdata::refreshtime}
+
+
+
+# --- Prevents inventory clicking while GUI opened ---
+
+on inventory close:
+	if {api::specialdata::%uuid of player%::invopened} is true:
+		clear {api::specialdata::%uuid of player%::invopened}
+
+on inventory click:
+	if {api::specialdata::%uuid of player%::invopened} is true:
+		cancel event
+
+
+# --- Last Death ---
+
+on death:
+	# Mob killing a player
+	if attacker is not a player:
+		if victim is a player:
+			set {api::data::%uuid of victim%::lastdeath.by} to "%attacker%"
+			set {api::data::%uuid of victim%::lastdeath.date} to now
+			set {api::data::%uuid of victim%::lastdeath.loc} to "%victim's location%"
+			set {api::data::%uuid of victim%::lastdeath.world} to "%victim's world%"
+			set {api::data::%uuid of victim%::lastdeath.deathcause} to "%damage cause%"
+			stop
+			#set {api::data::%uuid of attacker%::lastkill.name} to "%victim%"
+			#set {api::data::%uuid of attacker%::lastkill.date} to now
+			#set {api::data::%uuid of attacker%::lastkill.loc} to "%attacker's location%"
+			#set {api::data::%uuid of attacker%::lastkill.world} to "%attacker's world%"
+	# Player killing a mob
+	if attacker is a player:
+		if victim is not a player:
+			#set {api::data::%uuid of victim%::lastdeath.by} to "%attacker%"
+			#set {api::data::%uuid of victim%::lastdeath.date} to now
+			#set {api::data::%uuid of victim%::lastdeath.loc} to "%victim's location%"
+			#set {api::data::%uuid of victim%::lastdeath.world} to "%victim's world%"
+			set {api::data::%uuid of attacker%::lastkill.name} to "%victim%"
+			set {api::data::%uuid of attacker%::lastkill.date} to now
+			set {api::data::%uuid of attacker%::lastkill.loc} to "%attacker's location%"
+			set {api::data::%uuid of attacker%::lastkill.world} to "%attacker's world%"
+			set {api::data::%uuid of attacker%::lastkill.killcause} to "%damage cause%"
+			stop
+	# Player killing a player
+	if attacker is a player:
+		if victim is a player:
+			set {api::data::%uuid of victim%::lastdeath.by} to "%attacker%"
+			set {api::data::%uuid of victim%::lastdeath.date} to now
+			set {api::data::%uuid of victim%::lastdeath.loc} to "%victim's location%"
+			set {api::data::%uuid of victim%::lastdeath.world} to "%victim's world%"
+			set {api::data::%uuid of victim%::lastdeath.deathcause} to "%damage cause%"
+			set {api::data::%uuid of attacker%::lastkill.name} to "%victim%"
+			set {api::data::%uuid of attacker%::lastkill.date} to now
+			set {api::data::%uuid of attacker%::lastkill.loc} to "%attacker's location%"
+			set {api::data::%uuid of attacker%::lastkill.world} to "%attacker's world%"
+			set {api::data::%uuid of attacker%::lastkill.killcause} to "%damage cause%"
+			#set {api::data::%uuid of attacker%::lastdeath.cause} to "%damage cause%"
+			stop
+	# Normal death of player (V1.3)
+	if victim is a player:
+		#if attacker is not a living entity:
+		set {api::data::%uuid of victim%::lastdeath.by} to "(%damage cause%)"
+		set {api::data::%uuid of victim%::lastdeath.date} to now
+		set {api::data::%uuid of victim%::lastdeath.loc} to "%victim's location%"
+		set {api::data::%uuid of victim%::lastdeath.world} to "%victim's world%"
+		set {api::data::%uuid of victim%::lastdeath.deathcause} to "%damage cause%"
+		stop
+
+
+# --- Last Cmd ---
+
+on command:
+	set {api::data::%uuid of player%::lastcmd.cmd} to "/%full command%"
+	set {api::data::%uuid of player%::lastcmd.loc} to "%player's location%"
+	set {api::data::%uuid of player%::lastcmd.world} to "%player's world%"
+	set {api::data::%uuid of player%::lastcmd.date} to now
+
+
+# --- Last Chat ---
+
+on chat:
+	set {api::data::%uuid of player%::lastchat.msg} to "%message%"
+	set {api::data::%uuid of player%::lastchat.loc} to "%player's location%"
+	set {api::data::%uuid of player%::lastchat.world} to "%player's world%"
+	set {api::data::%uuid of player%::lastchat.date} to now
+
+
+# --- Last Break ---
+
+on break:
+	set {api::data::%uuid of player%::lastbreak.block} to "%event-block%"
+	set {api::data::%uuid of player%::lastbreak.loc} to "%event-block's location%"
+	set {api::data::%uuid of player%::lastbreak.world} to "%player's world%"
+	set {api::data::%uuid of player%::lastbreak.date} to now
+
+
+# --- Last Place ---
+
+on place:
+	set {api::data::%uuid of player%::lastplace.block} to "%event-block%"
+	set {api::data::%uuid of player%::lastplace.loc} to "%event-block's location%"
+	set {api::data::%uuid of player%::lastplace.world} to "%player's world%"
+	set {api::data::%uuid of player%::lastplace.date} to now
+	
+
+# --- First join ---
+
+on first join:
+	set {api::data::%uuid of player%::firstjoin.date} to now
+
+
+# --- Online Since ---
+
+
+every 1 second:
+	loop all players:
+		add 1 to {api::data::%uuid of loop-player%::onlinesince.time.sec}
+		if {api::data::%uuid of loop-player%::onlinesince.time.sec} = 60:
+			remove 60 from {api::data::%uuid of loop-player%::onlinesince.time.sec}
+			add 1 to {api::data::%uuid of loop-player%::onlinesince.time.min}
+		if {api::data::%uuid of loop-player%::onlinesince.time.min} = 60:
+			remove 60 from {api::data::%uuid of loop-player%::onlinesince.time.min}
+			add 1 to {api::data::%uuid of loop-player%::onlinesince.time.hour}
+
+on quit:
+	set {api::data::%uuid of player%::onlinesince.time.sec} to 0
+	set {api::data::%uuid of player%::onlinesince.time.min} to 0
+	set {api::data::%uuid of player%::onlinesince.time.hour} to 0
+
+# --- Join count ---
+
+on join:
+	add 1 to {api::data::%uuid of player%::joincount}
+	clear {api::data::%uuid of player%::onlinesince.time.sec}
+	clear {api::data::%uuid of player%::onlinesince.time.min}
+	clear {api::data::%uuid of player%::onlinesince.time.hour}
+
+# --- Quit count ---
+
+on quit:
+	add 1 to {api::data::%uuid of player%::quitcount}
+
+# --- Chat count ---
+
+on chat:
+	add 1 to {api::data::%uuid of player%::chatcount}
+	
+# --- Cmd count ---
+
+on command:
+	add 1 to {api::data::%uuid of player%::cmdcount}
+	
+# --- Jump count ---
+
+# REMOVED in v1.2.1
+
+#on jump:
+	#if {jumpcheck.%player%} is not set:
+		#set {jumpcheck.%player%} to true
+		#add 1 to {api::data::%uuid of player%::jumpcount}
+		#wait 5 ticks
+		#clear {jumpcheck.%player%}
+
+	
+# --- Drop count ---
+
+on drop:
+	add 1 to {api::data::%uuid of player%::dropcount}
+	
+# --- Craft count ---
+
+on craft:
+	add 1 to {api::data::%uuid of player%::craftcount}
+
+	
+# --- Break count ---
+
+on break:
+	add 1 to {api::data::%uuid of player%::breakcount}
+
+	
+# --- Place count ---
+
+on place:
+	add 1 to {api::data::%uuid of player%::placecount}
+
+	
+# --- MobKill count ---
+
+on death:
+	if victim is not a player:
+		add 1 to {api::data::%uuid of attacker%::mobkillcount}
+
+	
+# --- Sneak count ---
+
+on sneak toggle:
+	add 0.5 to {api::data::%uuid of player%::sneakcount}
+
+	
+# --- Sprint count ---
+
+on sprint toggle:
+	add 0.5 to {api::data::%uuid of player%::sprintcount}
+
+
+	
+# --- Pickup count ---
+
+on pickup:
+	add 1 to {api::data::%uuid of player%::pickupcount}
+
+
+# --- Auto convert data from player to player's uuid ---
+
+on join:
+	loop {api::data::%player%::*}:
+		set {api::data::%uuid of player%::%loop-index%} to loop-value
+	wait a tick
+	clear {api::data::%player%::*}
+
+	# If servers crashed and isopened variable is still true.
+	if {api::specialdata::%uuid of player%::invopened} is true:
+		clear {api::specialdata::%uuid of player%::invopened}
+
+
+# ------
+# 
+# <> End of Code
+# Made with love(❤) By Ayham Alali <>
+# 
+# ------

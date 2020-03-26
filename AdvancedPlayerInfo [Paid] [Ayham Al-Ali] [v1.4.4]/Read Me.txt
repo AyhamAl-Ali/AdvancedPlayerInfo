@@ -1,0 +1,21 @@
+AdvancedPlayerInfo Plugin [Paid] [Ayham Al-Ali]
+
+Thank you for purchasing my plugin :)
+If you have any question please feel free to PM me on spigot: https://www.spigotmc.org/members/ayhamalali.101712/
+
+• Requirements:
+
+Skript 2.2+
+SkQuery
+SkUtilites
+Skellett
+TuSKe
+Any Permission plugin (PermissionsEx ...)
+
+How to install:
+
+    Download requirements and put them in the plugins folder
+    reload/start the server to let skript folder generate
+    put the .sk file you've downloaded in "plugins/skript/scripts"
+    put the plugin folder which contains the .yml files in the plugins file
+    start the server and have fun :)

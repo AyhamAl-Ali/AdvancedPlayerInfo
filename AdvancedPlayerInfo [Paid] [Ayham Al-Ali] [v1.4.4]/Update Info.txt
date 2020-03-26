@@ -1,0 +1,13 @@
+﻿Update Info:
+
+» Version 1.4.4:
+
+
+» CHANGELOG:
+ - Added custom holograms refresh interval.
+ - Fixed a bug in the last update.. the auto config.yml generator was missing the hologramsList value.
+
+» NOTES:
+ - You either add this value to the config.yml or delete the config.yml file and let it generate again.
+[CODE]
+hologramsrefresh: '5' # in seconds - NOTE: using 1 second might lag your server if there is a lot of players.[/CODE]
